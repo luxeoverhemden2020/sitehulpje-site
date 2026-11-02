@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+:root{--bg:#070b14;--bg2:#0c1322;--kaart:rgba(16,25,43,.82);--tekst:#e6f1ff;--zacht:#8aa0bd;--lijn:#1f2f4a;--accent:#22e3c4;--accent2:rgba(34,227,196,.12);--paars:#8b5cf6;--fout:#ff6b81;--foutbg:rgba(255,107,129,.12);--let:#ffd166;--letbg:rgba(255,209,102,.12);--radius:16px;--glow:0 0 0 1px rgba(34,227,196,.25),0 0 24px rgba(34,227,196,.12);--kopbg:rgba(7,11,20,.8);--veld:rgba(7,11,20,.7);--bel:rgba(7,11,20,.6);--raster:rgba(34,227,196,.035);--paarsbg:rgba(139,92,246,.2);--paarstekst:#c4b5fd;--schaduw:0 10px 30px rgba(0,0,0,.25)}
+:root[data-thema=licht]{--bg:#eef4fb;--bg2:#ffffff;--kaart:rgba(255,255,255,.88);--tekst:#0b1a2e;--zacht:#5a6b82;--lijn:#d3deec;--accent:#0b9f8a;--accent2:rgba(11,159,138,.1);--fout:#d63355;--foutbg:rgba(214,51,85,.08);--let:#a86b00;--letbg:rgba(255,183,0,.12);--glow:0 0 0 1px rgba(11,159,138,.3),0 0 22px rgba(11,159,138,.15);--kopbg:rgba(255,255,255,.82);--veld:#f7fafd;--bel:#f1f6fb;--raster:rgba(11,120,180,.06);--paarsbg:rgba(139,92,246,.12);--paarstekst:#6d3fd8;--schaduw:0 8px 24px rgba(15,40,80,.08)}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;color:var(--tekst);font:16px/1.55 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh;
+  background:radial-gradient(1200px 600px at 10% -10%,rgba(139,92,246,.18),transparent 60%),radial-gradient(900px 500px at 110% 10%,rgba(34,227,196,.14),transparent 60%),
+  linear-gradient(var(--raster) 1px,transparent 1px) 0 0/100% 32px,linear-gradient(90deg,var(--raster) 1px,transparent 1px) 0 0/32px 100%,var(--bg)}
+a{color:var(--accent)}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.kop{background:var(--kopbg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--lijn);padding:10px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:5}
+.kop .bot-klein{width:38px;height:38px;flex:none}
+.kop .merk{font-weight:700;letter-spacing:.3px;min-width:0}
+.kop .merk small{display:block;font-weight:400;color:var(--zacht);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kop .merk b{color:var(--accent);font-family:"JetBrains Mono",monospace;font-weight:600}
+.kop .rechts{margin-left:auto;display:flex;gap:8px;align-items:center}
+.wrap{max-width:820px;margin:0 auto;padding:16px}
+.wrap.breed{max-width:1150px}
+.kaart{background:var(--kaart);border:1px solid var(--lijn);border-radius:var(--radius);padding:16px;margin-bottom:14px;box-shadow:var(--schaduw)}
+h1{font-size:24px;margin:0 0 12px}h2{font-size:18px;margin:0 0 10px;letter-spacing:.2px}
+h2 .tag{font-family:"JetBrains Mono",monospace;color:var(--accent);font-size:13px;font-weight:600;margin-right:6px}
+label{display:block;font-size:14px;color:var(--zacht);margin:10px 0 4px}
+input,select,textarea{width:100%;font:inherit;color:inherit;background:var(--veld);border:1px solid var(--lijn);border-radius:12px;padding:11px 12px}
+select option{background:var(--bg2)}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:var(--glow)}
+.knop{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:12px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;background:linear-gradient(135deg,#22e3c4,#3b82f6);color:#04111a;text-decoration:none;box-shadow:0 0 18px rgba(34,227,196,.25);transition:transform .15s,box-shadow .15s}
+.knop:hover{transform:translateY(-1px);box-shadow:0 0 26px rgba(34,227,196,.4)}
+.knop.licht{background:var(--accent2);color:var(--accent);box-shadow:none}
+.knop.rand{background:transparent;border:1px solid var(--lijn);color:var(--tekst);box-shadow:none}
+.knop.rand:hover{border-color:var(--accent)}
+.knop.klein{padding:7px 11px;font-size:14px}
+.knop:disabled{opacity:.5;cursor:default;transform:none}
+.rij{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.rij .vul{flex:1}
+.melding{border-radius:12px;padding:10px 12px;margin:10px 0;font-size:15px;border:1px solid transparent}
+.melding.fout{background:var(--foutbg);color:var(--fout);border-color:rgba(255,107,129,.3)}
+.melding.let{background:var(--letbg);color:var(--let);border-color:rgba(255,209,102,.3)}
+.melding.ok{background:var(--accent2);color:var(--accent);border-color:rgba(34,227,196,.3)}
+.verborgen{display:none!important}
+.duimen{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.duimen .d{position:relative}
+.duimen img{width:72px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--lijn);display:block}
+.duimen .weg{position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;border:0;background:var(--fout);color:#fff;cursor:pointer;font-size:12px;line-height:22px;padding:0}
+.mic.aan{background:var(--fout);color:#fff;border-color:var(--fout);animation:puls 1s infinite}
+@keyframes puls{50%{box-shadow:0 0 0 6px rgba(255,107,129,.25)}}
+.verzoek{background:var(--kaart);border:1px solid var(--lijn);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;transition:border-color .2s}
+.verzoek.actief{border-color:rgba(34,227,196,.5);box-shadow:var(--glow)}
+.verzoek .hoofd{padding:14px 16px;display:flex;gap:10px;align-items:center;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none}
+.verzoek .hoofd:active{background:var(--accent2)}
+.verzoek .hoofd .titel{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.verzoek .hoofd .nr{color:var(--accent);font-size:13px;font-family:"JetBrains Mono",monospace}
+.verzoek .lijf{border-top:1px solid var(--lijn);padding:12px 16px}
+.chip{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(138,160,189,.15);color:var(--zacht);white-space:nowrap;font-family:"JetBrains Mono",monospace}
+.chip.klaar,.chip.teruggedraaid{background:var(--accent2);color:var(--accent)}
+.chip.kan_niet{background:var(--foutbg);color:var(--fout)}
+.chip.wacht_op_klant,.chip.doorgestuurd{background:var(--letbg);color:var(--let)}
+.chip.nieuw,.chip.bezig,.chip.terugdraaien{background:var(--paarsbg);color:var(--paarstekst)}
+.balk{height:3px;background:rgba(34,227,196,.12);overflow:hidden;position:relative}
+.balk::after{content:"";position:absolute;inset:0;width:40%;background:linear-gradient(90deg,transparent,var(--accent),var(--paars),transparent);animation:loop 1.3s ease-in-out infinite}
+@keyframes loop{0%{transform:translateX(-100%)}100%{transform:translateX(260%)}}
+.bericht{margin:10px 0;max-width:88%}
+.bericht .wie{font-size:12px;color:var(--zacht);margin-bottom:3px;display:flex;align-items:center;gap:6px;font-family:"JetBrains Mono",monospace}
+.bericht .wie svg{width:20px;height:20px}
+.bericht .tekst{padding:10px 13px;border-radius:14px;background:var(--bel);border:1px solid var(--lijn);white-space:pre-wrap;word-wrap:break-word}
+.bericht.webbeheer .tekst{border-color:rgba(34,227,196,.35);border-top-left-radius:4px}
+.bericht.klant{margin-left:auto}
+.bericht.klant .tekst{background:linear-gradient(135deg,rgba(34,227,196,.22),rgba(59,130,246,.22));border-color:rgba(34,227,196,.35);border-top-right-radius:4px}
+.bericht.klant .wie{justify-content:flex-end}
+.bericht.jan .tekst{background:var(--letbg);border-color:rgba(255,209,102,.3)}
+.bericht img{max-width:160px;max-height:160px;border-radius:10px;margin-top:6px;display:block}
+/* Wachtpaneel met robot */
+.wacht{display:flex;gap:14px;align-items:center;margin:12px 0;padding:14px;border-radius:14px;background:linear-gradient(135deg,rgba(34,227,196,.08),rgba(139,92,246,.1));border:1px solid rgba(34,227,196,.25)}
+.wacht .bot{width:72px;height:72px;flex:none}
+.wacht .fase{font-family:"JetBrains Mono",monospace;color:var(--accent);font-size:14px}
+.wacht .fase::after{content:"▋";animation:knipper 1s steps(1) infinite;margin-left:2px}
+.wacht .weetje{font-size:14px;color:var(--tekst);margin-top:6px;opacity:.9;transition:opacity .4s}
+.wacht .weetje b{color:var(--let);font-weight:600}
+@keyframes knipper{50%{opacity:0}}
+.bot{overflow:visible}
+.bot .oog{animation:oog 4s infinite;transform-origin:center;transform-box:fill-box}
+.bot .ogen{transition:transform .25s ease-out}
+.bot .antenne{animation:zweef 2s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom}
+.bot .lijf{animation:drijf 3.2s ease-in-out infinite}
+.bot .schaduw{animation:schaduw 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.bot .hartlamp{animation:hart 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.bot .scan{animation:scan 1.6s ease-in-out infinite}
+.bot.zwaai .arm-r{animation:zwaai 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 10%}
+.bot.rust .scan{display:none}
+.bot.rust .lijf,.bot.rust .schaduw{animation:none}
+@keyframes oog{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes zweef{50%{transform:translateY(-2px)}}
+@keyframes drijf{50%{transform:translateY(-4px)}}
+@keyframes schaduw{50%{transform:scaleX(.85);opacity:.12}}
+@keyframes hart{50%{transform:scale(1.15)}}
+@keyframes zwaai{0%,55%,100%{transform:rotate(0)}65%{transform:rotate(-35deg) translateY(-4px)}75%{transform:rotate(-15deg) translateY(-4px)}85%{transform:rotate(-35deg) translateY(-4px)}}
+@keyframes scan{0%{transform:translateY(0);opacity:0}20%{opacity:.9}100%{transform:translateY(26px);opacity:0}}
+@media (prefers-reduced-motion:reduce){.balk::after,.bot *,.wacht .fase::after,.mic.aan{animation:none!important}}
+.bezigtekst{font-size:14px;color:var(--zacht);margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--lijn);vertical-align:top}
+th{color:var(--zacht);font-weight:600;font-family:"JetBrains Mono",monospace;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+tr.klik{cursor:pointer}tr.klik:hover{background:rgba(34,227,196,.06)}
+.tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--lijn);background:var(--kaart);color:var(--tekst);padding:8px 14px;border-radius:999px;font:inherit;cursor:pointer}
+.tabs button.aan{background:var(--accent2);color:var(--accent);border-color:var(--accent)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}.tabel-scroll{overflow-x:auto}}
+.paneel{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;justify-content:flex-end;z-index:20}
+.paneel .in{background:var(--bg2);border-left:1px solid var(--lijn);width:min(560px,100%);height:100%;overflow:auto;padding:16px}
+.inlog{max-width:400px;margin:8vh auto;padding:0 16px}
+.inlog .bot{width:110px;height:110px;display:block;margin:0 auto 6px}
+.inlog h1{text-align:center}
+.inlog .sub{text-align:center}
+.zacht{color:var(--zacht);font-size:14px}
+input[type=month]{color-scheme:dark}
+:root[data-thema=licht] input[type=month]{color-scheme:light}
+.thema{width:38px;height:38px;padding:0;font-size:17px}
+
+button,a,.knop,tr.klik{touch-action:manipulation}
+.bericht .tekst a{color:inherit;text-decoration:underline;word-break:break-all}
+.bericht.webbeheer .tekst a{color:var(--accent)}
+
+/* snelknoppen klantomgeving */
+.snel{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;margin:0 -2px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.snelknop{flex:none;display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid var(--lijn);background:var(--veld);color:var(--tekst);font:inherit;font-size:14px;cursor:pointer;touch-action:manipulation;transition:border-color .15s,background .15s}
+.snelknop:hover,.snelknop.aan{border-color:var(--accent);background:var(--accent2);color:var(--accent)}
+.snelknop span{font-size:16px}

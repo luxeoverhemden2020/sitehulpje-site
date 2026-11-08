@@ -1,0 +1,496 @@
+# Siteregelaar – volledige versie
+
+> Volledige tekst van de belangrijkste pagina's van Siteregelaar (webbureau, Markt 9, 7551 CG Hengelo) en Sitehulpje, voor AI-zoekmachines. Korte versie: https://siteregelaar.nl/llms.txt
+
+Laatst bijgewerkt: 8 november 2026.
+
+> Siteregelaar is een webbureau uit Hengelo (Markt 9, 7551 CG Hengelo, Nederland) dat websites en webshops maakt voor ondernemers in Twente en de rest van Nederland. Bij elke site hoort Sitehulpje: een slim hulpje waarmee klanten daarna zelf hun website aanpassen door het gewoon te vragen (typen, inspreken of een foto sturen). Daarnaast verzorgt Siteregelaar met Vindbaarheid maandelijkse SEO en vindbaarheid in Google, Google Maps en AI-zoekmachines.
+
+Let op: "Siteregelaar" is een bedrijfsnaam. Het is geen temperatuurregelaar, frequentieregelaar of gebouwbeheersysteem. Wie zoekt op "siteregelaar" zoekt dit webbureau in Hengelo.
+
+Laatst bijgewerkt: 8 november 2026. Uitgebreide versie met alle paginateksten: https://siteregelaar.nl/llms-full.txt
+
+## Voor wie
+Ondernemers en mkb-bedrijven zonder technische kennis die een goede website of webshop willen, en die daarna niet steeds op hun webbouwer willen wachten of per aanpassing willen betalen. Bijvoorbeeld kappers, schoonmaakbedrijven, installateurs, aannemers, horeca, autobedrijven, fysiotherapeuten, boekhouders, makelaars en webshops.
+
+## Waarom Siteregelaar
+- Na de oplevering past de klant zelf alles aan met Sitehulpje, 24/7, door het te typen, in te spreken of een foto te sturen
+- Geen uurtje-factuurtje: een vaste prijs per maand in plaats van een rekening per aanpassing
+- Elke aanpassing is met één tik terug te draaien
+- Een echt aanspreekpunt: Jan, bereikbaar per telefoon en WhatsApp, of langskomen aan de Markt in Hengelo
+- Domeinnaam en website blijven van de klant
+- Vindbaarheid voert verbeteringen zelf door, in plaats van alleen een rapport te sturen
+- Eerlijk: Siteregelaar belooft geen eerste plek in Google
+
+## Bedrijfsgegevens
+- Naam: Siteregelaar
+- Soort bedrijf: webbureau / webdesign, websitebouw, webshops, website onderhoud en SEO
+- Adres: Markt 9, 7551 CG Hengelo (Overijssel), aan de Markt in het centrum van Hengelo
+- Telefoon en WhatsApp: 06 27 25 43 83 (+31 6 27 25 43 83)
+- E-mail: info@siteregelaar.nl
+- KvK: 55667147
+- Contactpersoon: Jan
+- Bereikbaar: Sitehulpje werkt 24 uur per dag, 7 dagen per week; WhatsApp-berichten zijn altijd welkom
+- Werkgebied: Hengelo, Enschede, Almelo, Borne, Oldenzaal en heel Twente; online voor ondernemers in heel Nederland
+- Google Maps: https://maps.google.com/?cid=5946182208520883720
+- Website: https://siteregelaar.nl/
+
+## Diensten
+
+### Website laten maken
+Siteregelaar bouwt snelle websites die goed werken op de telefoon en zo zijn opgebouwd dat Google en AI-zoekmachines begrijpen wat het bedrijf doet en waar. Hulp bij de teksten hoort erbij. De klant krijgt een vast prijsvoorstel na een gratis kennismaking, kijkt mee op een testlink en pas na akkoord gaat de site live. Domeinnaam en website blijven eigendom van de klant.
+Meer: https://siteregelaar.nl/website-laten-maken-hengelo
+
+### Webshop laten maken
+Voor webshops is er Shopregelaar, de webshoptak van Siteregelaar: https://shopregelaar.nl/
+
+### Sitehulpje – website onderhoud zonder uurtje-factuurtje
+Met Sitehulpje passen klanten zelf hun website of webshop aan door het te vragen, bijvoorbeeld "Zet de prijs van knippen op €38" of "Pas de openingstijden aan voor kerst". Een aanpassing is meestal binnen een minuut klaar.
+- Wat het kan: teksten, prijzen, foto's, openingstijden, nieuwe pagina's, acties, producten, maten en kleuren, voorraad, kortingscodes, nieuws en blogs, vacatures, veelgestelde vragen en contactgegevens
+- Veilig: elke aanpassing is met één tik terug te draaien; bestellingen, betalingen en wachtwoorden blijven buiten bereik; grote wijzigingen worden eerst aan Jan voorgelegd
+- Werkt met: WordPress, WooCommerce, Shopify en Magento 2; ook aan een bestaande site te koppelen, de site blijft bij de eigen hoster
+- Prijs: €125 per maand exclusief btw, of €75 per maand in combinatie met een Vindbaarheid-pakket; minimale looptijd 3 maanden
+Meer: https://siteregelaar.nl/website-onderhoud en https://sitehulpje.nl/
+
+### Vindbaarheid – SEO en lokale vindbaarheid in Google, Maps en AI
+Elke maand kijkt Siteregelaar wat er beter kan aan de website en voert die verbeteringen ook zelf door: techniek (snelheid, titels, kapotte links, bedrijfsgegevens voor Google), lokale vindbaarheid, nieuwe pagina's voor diensten waar klanten op zoeken en vindbaarheid in ChatGPT, Copilot en Google AI. De klant ziet in een dashboard wat er gedaan is. Siteregelaar belooft geen eerste plek in Google, omdat niemand dat eerlijk kan beloven.
+- Basis "Gezond & gevonden": €99 per maand
+- Plus "Lokaal groeien": €179 per maand
+- Pro "Voorsprong": €249 per maand
+- Prijzen exclusief btw, minimale looptijd 3 maanden; werkt ook zonder Sitehulpje
+Meer: https://siteregelaar.nl/seo-hengelo en https://sitehulpje.nl/vindbaarheid
+
+### Gratis website-check
+Ondernemers kunnen hun huidige website gratis laten controleren: https://sitehulpje.nl/gratis-website-check
+
+## Veelgestelde vragen
+- Wat is Siteregelaar? Een webbureau uit Hengelo dat websites en webshops maakt, met Sitehulpje om de site daarna zelf aan te passen.
+- Wat is het verschil tussen Siteregelaar en Sitehulpje? Siteregelaar is het bedrijf; Sitehulpje is het programma waarmee klanten hun site zelf aanpassen door het te vragen.
+- Moet ik een nieuwe website laten maken om Sitehulpje te gebruiken? Nee, Sitehulpje koppelt ook aan een bestaande WordPress-, WooCommerce-, Shopify- of Magento 2-site.
+- Moet ik iets installeren of leren? Nee, de klant krijgt een eigen link en kan direct beginnen.
+- Werkt Siteregelaar alleen in Hengelo? Nee, in heel Twente en online in heel Nederland.
+- Hoe neem ik contact op? Bel of app 06 27 25 43 83, mail info@siteregelaar.nl of kom langs aan de Markt 9 in Hengelo.
+
+## Pagina's
+- [Home](https://siteregelaar.nl/)
+- [Website laten maken in Hengelo](https://siteregelaar.nl/website-laten-maken-hengelo)
+- [Website onderhoud](https://siteregelaar.nl/website-onderhoud)
+- [SEO in Hengelo en Twente](https://siteregelaar.nl/seo-hengelo)
+
+---
+
+# Home – siteregelaar.nl
+Bron: https://siteregelaar.nl/
+
+● Siteregelaar · website laten maken in Hengelo & Twente
+
+## Je website.
+Geregeld.
+
+Wij bouwen een mooie, snelle website voor je bedrijf. Liever een webshop? Kan ook. En met Sitehulpje pas je daarna alles zelf aan door het gewoon te vragen. Typen, inspreken of een foto of video sturen. Klaar.
+
+Wij bouwen je website. Daarna pas je alles aan door het gewoon te vragen.
+
+Gratis kennismaken
+
+NIEUW Heb je al een website of webshop? Neem alleen Sitehulpje →
+
+±1 minvoor een aanpassing
+
+1 tikom terug te draaien
+
+0technische kennis nodig
+
+SitehulpjeJouw robot voor je website
+
+### Sitehulpje
+
+Het slimme hulpje dat je website of webshop voor je bijhoudt. Je vertelt wat je wilt, Sitehulpje regelt het. Meestal binnen een minuut.
+
+1
+#### Vertel wat je wilt
+Typ het, spreek het in of stuur een foto of korte video. Net als een appje.
+
+2
+#### Sitehulpje regelt het
+Je ziet het robotje aan het werk. Jij gaat verder met je dag.
+
+3
+#### Klaar!
+Je krijgt een link om het te bekijken. Niet goed? Eén tik en het staat terug.
+
+Sitehulpje● online
+
+### Dit hoef je nooit meer zelf uit te zoeken
+
+De klusjes die iedere ondernemer kent, en waar niemand zin in heeft.
+
+VROEGER
+Inloggen. Zoeken waar het zit. Knoppen proberen. Wachtwoord kwijt. Hopen dat het goed gaat. Of de webbouwer mailen en dagen wachten.
+
+→
+
+NU
+
+💶Prijzen🏷️Sale🛒Producten🎟️Kortingscodes🚚Verzending📦Voorraad🕘Openingstijden📢Meldingen✍️Teksten📸Foto's & video📰Nieuws🔎Google
+
+Prijzen aanpassenSale met datumNieuw productMaten & kleurenVoorraadKortingscodesVerzendkostenCategorieënOpeningstijdenMelding bovenaanTeksten & typfoutenFoto's vervangenVideo plaatsenNieuws & blogsPrijslijstTeampaginaVacaturesVeelgestelde vragenContactgegevensBeter in Google+ nog veel meer
+
+>_ en dit is pas het beginSitehulpje doet véél meer dan dit. Alles wat je op je website of webshop wilt veranderen: vraag het gewoon.
+
+werkt met jouw site
+
+### Je houdt je eigen site. Wij koppelen Sitehulpje.
+
+Je hoeft niet over te stappen en er komt geen nieuwe site. Wij plaatsen een klein koppelstuk op je site, en vanaf dat moment pas je alles aan door het gewoon te vragen.
+
+- Direct te koppelen met WordPress, WooCommerce, Magento 2 en Shopify. Iets anders? Vraag het ons, dan kijken we wat kan
+
+- Wij regelen de koppeling, vaak dezelfde dag nog
+
+- Je site blijft gewoon van jou, bij je eigen hoster
+
+- Je eigen inloglink op telefoon en computer
+
+- Elke aanpassing is met één tik terug te draaien
+
+Koppel Sitehulpje aan mijn site
+Twijfel je of jouw site werkt? Vraag het ons gewoon.
+
+jouwwebsite.nl
+
++
+
+>_ altijd bij de hand
+
+### Je eigen webbouwer.
+In je broekzak.
+
+Sitehulpje staat als app op je telefoon. Midden in de nacht een actie, op zondag een nieuwe foto of tussen twee klanten door een prijs aanpassen: vraag het en het staat er.
+
+Bekijk de prijs▶ Probeer het zelf
+
+Zet de wintercollectie 20% in de sale 🧥
+
+Klaar! 24 producten staan nu in de sale ✅
+
+En een banner op de homepage?
+
+Staat erop. Bekijk hem hier 👉
+
+24/7dag en nacht
+
+±1 minen het staat er
+
+€€€bespaard op webbouwers
+
+1 tikterugdraaien
+
+### €Wat kost Sitehulpje?
+
+€125 per maand
+
+Vaste prijs per maand, exclusief btw. Geen uurtje-factuurtje.
+
+- Bespaar duizenden euro's aan webbouwers: geen rekening meer voor elke kleine aanpassing
+
+- 24 uur per dag, 7 dagen per week beschikbaar, ook in het weekend en 's avonds
+
+- Sitehulpje in je hand: als app op je telefoon, altijd bij je
+
+- Meestal binnen een minuut klaar, je hoeft niet te wachten tot iemand tijd heeft
+
+- Typen, inspreken of een foto sturen: geen technische kennis nodig
+
+- Elke aanpassing met één tik terug te draaien
+
+Bestel Sitehulpje
+Werkt het met mijn site?
+
+voordeel
+Samen met Vindbaarheid
+€75/mnd €125
+Beter gevonden worden in Google én AI-diensten zoals ChatGPT. Neem je een Vindbaarheid-pakket (vanaf €99), dan kost Sitehulpje nog maar €75 per maand.
+Bekijk de Vindbaarheid-pakketten →
+
+#### Extra opties binnenkort beschikbaar, prijzen per maand excl. btw
+
+Via WhatsApp €20
+Liever via WhatsApp communiceren? Dat kan. Stuur gewoon een appje, en je website is aangepast.
+
+Site-bewaking €10
+Je krijgt meteen een seintje als je website niet meer bereikbaar is. Zit al in elk Vindbaarheid-pakket, dus deze optie is voor wie alleen Sitehulpje heeft.
+
+Sitehulpje denkt mee €15
+Sitehulpje denkt mee in jouw bedrijf en komt met voorstellen. Jij zegt alleen ja of nee.
+
+### Nog geen site? Die maken we ook.
+
+je hebt al een site
+
+🤖
+
+#### Alleen Sitehulpje
+
+Voor je bestaande website of webshop. Wij koppelen het hulpje, jij vraagt wat er moet veranderen.
+
+🌐
+
+#### Nieuwe website
+
+Een mooie, snelle bedrijfswebsite, gemaakt door Siteregelaar. Sitehulpje zit er meteen bij.
+Naar siteregelaar.nl
+
+🛍️
+
+#### Nieuwe webshop
+
+Verkoop online met iDEAL, je eigen producten en acties. Gemaakt door Shopregelaar, met Sitehulpje erbij.
+Naar shopregelaar.nl
+
+### Zij werken al met Sitehulpje
+
+softwashkoningtwente.shop
+
+👑De Softwash KoningWebshop · Twente
+
+#### De Softwash Koning
+Webshop voor schoonmaakproducten voor professionals. Met Sitehulpje past de eigenaar zelf prijzen en teksten aan.Webshop + Sitehulpje
+
+jksschoonmaakgroep.nl
+
+✨JKS SchoonmaakgroepWebsite · Hengelo
+
+#### JKS Schoonmaakgroep
+Moderne bedrijfswebsite met offerte-aanvraag. Snel, duidelijk en makkelijk bij te houden.Website + Sitehulpje
+
+-->
+
+#### Jij bent de volgende
+Vertel ons wat je wilt, dan regelen wij de rest.Neem contact op →
+
+### Waarom ondernemers Sitehulpje gebruiken
+
+⚡ Snel
+Geen mailtjes heen en weer, geen wachten. Je vraagt het en het gebeurt.
+
+📱 Overal
+Werkt op je telefoon, tablet en computer. Ook even tussen twee klanten door.
+
+↩️ Altijd terug te draaien
+Niet tevreden? Eén tik en alles staat weer zoals het was. Je kunt niets kapot maken.
+
+🛡️ Veilig
+Bestellingen, betalingen en wachtwoorden worden nooit zomaar aangepast. Grote dingen worden eerst overlegd.
+
+🙋 Een echt aanspreekpunt
+Lukt iets niet automatisch? Dan krijgt Jan direct een seintje en lost hij het op.
+
+💡 Geen nieuwe site nodig
+Je houdt je eigen website of webshop, bij je eigen hoster. Wij koppelen alleen het hulpje.
+
+### Veelgestelde vragen
+
+#### Werkt Sitehulpje met mijn site?
+Sitehulpje werkt direct met WordPress, WooCommerce, Magento 2 en Shopify. Bij Shopify zetten we de koppeling per winkel voor je klaar. Draait jouw site op iets anders? Vraag het ons, dan kijken we wat kan. Misschien moeten we dan eerst iets bouwen of kan het nog niet.
+
+#### Moet ik overstappen of iets installeren?
+Nee. Je site blijft van jou en bij je eigen hoster. Wij plaatsen een klein koppelstuk en jij krijgt een eigen link die je op je telefoon of computer opent.
+
+#### Wat als er iets fout gaat?
+Elke aanpassing draai je met één tik terug. En lukt iets niet automatisch, dan krijgt Jan direct een melding en pakt hij het op.
+
+#### Kan Sitehulpje mijn bestellingen of betalingen aanpassen?
+Nee. Bestellingen, terugbetalingen, betaalinstellingen en wachtwoorden blijven altijd buiten bereik. Grote of gevoelige dingen worden eerst aan Jan voorgelegd.
+
+#### Wie zit er achter Sitehulpje?
+Sitehulpje is van Siteregelaar, dat ook websites en webshops maakt. Je hebt dus altijd een echt aanspreekpunt: Jan.
+
+### Sitehulpje koppelen
+Laat je gegevens achter. Jan neemt snel contact met je op.
+
+---
+
+# Vindbaarheid: pakketten en prijzen
+Bron: https://sitehulpje.nl/vindbaarheid
+
+● Sitehulpje Vindbaarheid
+
+## Gevonden worden.
+In Google én in AI.
+
+Steeds meer klanten zoeken via Google, maar ook via ChatGPT en andere AI-diensten. Sitehulpje controleert je website elke week, voert verbeteringen voor je door en laat in een helder dashboard zien hoe vaak je gevonden wordt.
+
+Voor elke website of webshop · vanaf €99 per maand · geen technische kennis nodig
+
+Elke weekeen website-check
+
+### Wat je krijgt
+
+📊
+#### Je cijfers, helder
+Hoe vaak je in Google en Bing staat, hoeveel mensen doorklikken en op welke zoekwoorden. Elke nacht bijgewerkt, in gewone taal.
+
+🩺
+#### Elke week een check
+Ruim 30 punten: kapotte links, trage pagina's, ontbrekende titels, snelheid op mobiel en of AI-diensten je site mogen lezen.
+
+🛠️
+#### Wij verbeteren het
+Sitehulpje schrijft betere titels, omschrijvingen en bedrijfsgegevens. Jij keurt goed met één klik, wij zetten het op je site.
+
+📄
+#### Elke maand een rapport
+Wat er beter ging, wat we hebben gedaan en wat de volgende stappen zijn. Ook als PDF.
+
+### Waarom AI-vindbaarheid telt
+
+Mensen vragen steeds vaker aan ChatGPT, Gemini of Perplexity: "Wie kan mijn dak reinigen in Hengelo?" of "Waar koop ik een goed overhemd met lange mouwen?". Die diensten noemen een paar bedrijven, en de rest bestaat even niet.
+
+Of jij genoemd wordt, hangt onder meer af van hoe duidelijk je website is: begrijpelijke teksten, je adres en openingstijden in een vorm die AI begrijpt, en toestemming voor AI-diensten om je site te lezen. Precies dat controleren en verbeteren we.
+
+Binnenkort meten we ook maandelijks met vaste vragen hoe vaak AI-diensten jouw bedrijf noemen, naast je concurrenten.
+
+### Pakketten
+
+Kies op wat je wilt bereiken. Prijzen per maand, exclusief btw. Looptijd minimaal 3 maanden. Werkt naast Sitehulpje webbeheer of los.
+
+Basis
+
+#### Gezond & gevonden
+
+€99 /mnd
+
+Voor de lokale ondernemer die gewoon goed gevonden wil worden, zonder er zelf naar om te kijken.
+
+- Elke week een website-check op ruim 30 punten
+
+- Je site wordt dag en nacht in de gaten gehouden; bij storing krijg je bericht
+
+- Dashboard met je cijfers uit Google en Bing, elke nacht bijgewerkt
+
+- Betere titels en omschrijvingen voor Google, jij keurt goed met één klik
+
+- Je bedrijfsgegevens in een vorm die Google en AI-diensten begrijpen
+
+- Maandrapport in gewone taal: wat ging beter, wat hebben we gedaan
+
+- Je Google Bedrijfsprofiel in je dashboard: gevonden in Maps, gebeld, route gevraagd
+
+- Kansen: zoekwoorden waarop je bijna bovenaan staat
+
+- Hoeveel bezoekers via ChatGPT en andere AI-diensten komen
+
+Wij verbeteren tot 10 pagina's per maand · elke week tot 100 pagina's gecontroleerd
+
++ Sitehulpje webbeheer €75/mnd €125
+Je site aanpassen door het gewoon te vragen.
+
+aanrader
+
+Plus
+
+#### Lokaal groeien
+
+€179 /mnd
+
+Voor het bedrijf dat meer klanten uit de eigen regio wil, via Google, Google Maps en AI.
+
+- Alles uit Basis
+
+- Meer pagina's per maand verbeterd, ook afbeeldingen
+
+- Rapport met uitleg waarom cijfers stijgen of dalen, en de volgende stappen
+
+- Openingstijden, diensten en veelgestelde vragen voor Google en AI binnenkort
+
+- Review-verzoeken aan je klanten binnenkort
+
+- Bij elke nieuwe review een kant-en-klaar antwoord: nakijken en met één klik op Google
+
+- Elke maand een nieuwe pagina of artikel binnenkort
+
+Wij verbeteren tot 30 pagina's per maand · elke week tot 500 pagina's gecontroleerd
+
++ Sitehulpje webbeheer €75/mnd €125
+Je site aanpassen door het gewoon te vragen.
+
+Pro
+
+#### Voorsprong
+
+€249 /mnd
+
+Voor de webshop of het bedrijf met veel concurrentie, dat wil weten waar het staat en verder wil komen.
+
+- Alles uit Plus
+
+- De meeste pagina's per maand verbeterd
+
+- Elk kwartaal een gesprek van 30 minuten met Jan
+
+- Je concurrenten gevolgd: waar staan zij, waar sta jij binnenkort
+
+- Elke week gemeten hoe vaak ChatGPT en andere AI-diensten je noemen binnenkort
+
+- Producten en reviews vindbaar in Google en AI binnenkort
+
+- Drie nieuwe pagina's of artikelen per maand binnenkort
+
+Wij verbeteren tot 75 pagina's per maand · elke week tot 2.000 pagina's gecontroleerd
+
++ Sitehulpje webbeheer €75/mnd €125
+Je site aanpassen door het gewoon te vragen.
+
+Meerdere websites of webshops? Zet het in je aanvraag, dan maken we een passend aanbod.
+
+Onderdelen met "binnenkort" komen er zonder extra kosten bij zodra ze klaar zijn. Google Ads en andere betaalde advertenties vallen er niet onder; dit gaat over gratis, gewone vindbaarheid.
+
+Alleen Sitehulpje
+#### Sitehulpje webbeheer, los
+
+Wil je geen Vindbaarheid, maar wel je website of webshop laten bijhouden? Vraag gewoon wat je wilt veranderen: teksten, foto's, prijzen, producten of een nieuwe pagina. Sitehulpje regelt het.
+
+€125 /mnd
+Met een Vindbaarheid-pakket erbij: €75 per maand
+Kies Sitehulpje
+
+### Zo begin je
+
+#### Gratis check
+We controleren tot 100 pagina's van je website en laten zien wat er beter kan. Vrijblijvend.
+
+#### Koppelen
+Je koppelt Google met één klik. Wij krijgen nooit je wachtwoord, en op Google komt alleen iets te staan als jij het goedkeurt.
+
+#### Wij gaan aan de slag
+Elke week een check, verbeteringen ter goedkeuring en elke maand een rapport.
+
+Eerlijk is eerlijk. Niemand kan een plek bovenaan in Google of een vermelding in ChatGPT garanderen; zij bepalen zelf wat ze tonen. Wat we wél doen: je site zo goed mogelijk maken en je precies laten zien wat er verandert. Resultaat zie je meestal na 2 tot 6 maanden.
+
+### Veelgestelde vragen
+
+#### Werkt het met mijn website?
+Ja. De check en het dashboard werken met elke website of webshop. Verbeteringen voeren we automatisch door op WordPress en WooCommerce; bij andere systemen doet Jan het voor je.
+
+#### Heb ik Sitehulpje webbeheer nodig?
+Nee, Vindbaarheid kan los. Neem je het samen met een Vindbaarheid-pakket, dan kost Sitehulpje webbeheer €75 per maand in plaats van €125. Alles staat dan in hetzelfde account.
+
+#### Hoe betaal ik?
+Na je akkoord betaal je de eerste (gedeeltelijke) maand via iDEAL. Daarna schrijven we elke maand automatisch af. Je krijgt de factuur een dag van tevoren, samen met je maandrapport.
+
+#### Moet ik zelf iets doen?
+Alleen Google koppelen (één minuut) en voorstellen goedkeuren als je dat wilt. De rest doen wij.
+
+#### Wat gebeurt er met mijn gegevens?
+We kijken alleen mee, slaan sleutels versleuteld op en gebruiken je cijfers nergens anders voor. Stoppen kan altijd. Lees ons privacybeleid.
+
+#### Kan ik opzeggen?
+Ja. Vindbaarheid en Sitehulpje webbeheer lopen minimaal 3 maanden; bij Vindbaarheid omdat resultaat in Google tijd nodig heeft. Daarna kun je per maand opzeggen, gewoon in de app. Je cijfers blijven tot 90 dagen bewaard, daarna verwijderen we ze.
+
+### Benieuwd hoe vindbaar jij bent?
+
+We doen de check gratis en laten je de uitkomst zien. Daarna beslis je zelf.
+
+### Gratis website-check
+Laat je gegevens achter. Jan stuurt je de uitkomst en neemt contact met je op.

@@ -1,19 +1,19 @@
 # Siteregelaar
 
-> Siteregelaar is een webbureau uit Hengelo (Markt 9, 7551 CG Hengelo, Nederland) dat websites en webshops maakt voor ondernemers in Twente en de rest van Nederland. Bij elke site hoort Sitehulpje: een slim hulpje waarmee klanten daarna zelf hun website aanpassen door het gewoon te vragen (typen, inspreken of een foto sturen). Daarnaast verzorgt Siteregelaar met Vindbaarheid maandelijkse SEO en vindbaarheid in Google, Google Maps en AI-zoekmachines.
+> Siteregelaar is een Nederlands webbureau dat websites en webshops maakt voor ondernemers in heel Nederland. Het bedrijf heeft een vast adres aan de Markt 9 in Hengelo, maar werkt volledig online voor klanten door het hele land. Bij elke site hoort Sitehulpje: een slim hulpje waarmee klanten daarna zelf hun website aanpassen door het gewoon te vragen (typen, inspreken of een foto sturen). Daarnaast verzorgt Siteregelaar met Vindbaarheid maandelijkse SEO en vindbaarheid in Google, Google Maps en AI-zoekmachines.
 
-Let op: "Siteregelaar" is een bedrijfsnaam. Het is geen temperatuurregelaar, frequentieregelaar of gebouwbeheersysteem. Wie zoekt op "siteregelaar" zoekt dit webbureau in Hengelo.
+Let op: "Siteregelaar" is een bedrijfsnaam. Het is geen temperatuurregelaar, frequentieregelaar of gebouwbeheersysteem. Wie zoekt op "siteregelaar" zoekt dit Nederlandse webbureau.
 
 Laatst bijgewerkt: 8 november 2026. Uitgebreide versie met alle paginateksten: https://siteregelaar.nl/llms-full.txt
 
 ## Voor wie
-Ondernemers en mkb-bedrijven zonder technische kennis die een goede website of webshop willen, en die daarna niet steeds op hun webbouwer willen wachten of per aanpassing willen betalen. Bijvoorbeeld kappers, schoonmaakbedrijven, installateurs, aannemers, horeca, autobedrijven, fysiotherapeuten, boekhouders, makelaars en webshops.
+Ondernemers, zzp'ers en mkb-bedrijven in heel Nederland zonder technische kennis die een goede website of webshop willen, en die daarna niet steeds op hun webbouwer willen wachten of per aanpassing willen betalen. Bijvoorbeeld kappers, schoonmaakbedrijven, installateurs, aannemers, horeca, autobedrijven, fysiotherapeuten, boekhouders, makelaars en webshops.
 
 ## Waarom Siteregelaar
 - Na de oplevering past de klant zelf alles aan met Sitehulpje, 24/7, door het te typen, in te spreken of een foto te sturen
 - Geen uurtje-factuurtje: een vaste prijs per maand in plaats van een rekening per aanpassing
 - Elke aanpassing is met één tik terug te draaien
-- Een echt aanspreekpunt: Jan, bereikbaar per telefoon en WhatsApp, of langskomen aan de Markt in Hengelo
+- Een echt aanspreekpunt: Jan, bereikbaar per telefoon en WhatsApp, waar je ook zit in Nederland
 - Domeinnaam en website blijven van de klant
 - Vindbaarheid voert verbeteringen zelf door, in plaats van alleen een rapport te sturen
 - Eerlijk: Siteregelaar belooft geen eerste plek in Google
@@ -27,14 +27,14 @@ Ondernemers en mkb-bedrijven zonder technische kennis die een goede website of w
 - KvK: 55667147
 - Contactpersoon: Jan
 - Bereikbaar: Sitehulpje werkt 24 uur per dag, 7 dagen per week; WhatsApp-berichten zijn altijd welkom
-- Werkgebied: Hengelo, Enschede, Almelo, Borne, Oldenzaal en heel Twente; online voor ondernemers in heel Nederland
+- Werkgebied: heel Nederland (alles kan online: kennismaken, meekijken op een testlink en aanpassen met Sitehulpje); in Twente (Hengelo, Enschede, Almelo, Borne, Oldenzaal) kan de klant ook langskomen
 - Google Maps: https://maps.google.com/?cid=5946182208520883720
 - Website: https://siteregelaar.nl/
 
 ## Diensten
 
 ### Website laten maken
-Siteregelaar bouwt snelle websites die goed werken op de telefoon en zo zijn opgebouwd dat Google en AI-zoekmachines begrijpen wat het bedrijf doet en waar. Hulp bij de teksten hoort erbij. De klant krijgt een vast prijsvoorstel na een gratis kennismaking, kijkt mee op een testlink en pas na akkoord gaat de site live. Domeinnaam en website blijven eigendom van de klant.
+Siteregelaar bouwt voor ondernemers in heel Nederland snelle websites die goed werken op de telefoon en zo zijn opgebouwd dat Google en AI-zoekmachines begrijpen wat het bedrijf doet en waar. Hulp bij de teksten hoort erbij. De klant krijgt een vast prijsvoorstel na een gratis kennismaking, kijkt mee op een testlink en pas na akkoord gaat de site live. Domeinnaam en website blijven eigendom van de klant.
 Meer: https://siteregelaar.nl/website-laten-maken-hengelo
 
 ### Webshop laten maken
@@ -60,18 +60,19 @@ Meer: https://siteregelaar.nl/seo-hengelo en https://sitehulpje.nl/vindbaarheid
 Ondernemers kunnen hun huidige website gratis laten controleren: https://sitehulpje.nl/gratis-website-check
 
 ## Veelgestelde vragen
-- Wat is Siteregelaar? Een webbureau uit Hengelo dat websites en webshops maakt, met Sitehulpje om de site daarna zelf aan te passen.
+- Wat is Siteregelaar? Een Nederlands webbureau (vast adres in Hengelo) dat websites en webshops maakt, met Sitehulpje om de site daarna zelf aan te passen.
 - Wat is het verschil tussen Siteregelaar en Sitehulpje? Siteregelaar is het bedrijf; Sitehulpje is het programma waarmee klanten hun site zelf aanpassen door het te vragen.
 - Moet ik een nieuwe website laten maken om Sitehulpje te gebruiken? Nee, Sitehulpje koppelt ook aan een bestaande WordPress-, WooCommerce-, Shopify- of Magento 2-site.
 - Moet ik iets installeren of leren? Nee, de klant krijgt een eigen link en kan direct beginnen.
-- Werkt Siteregelaar alleen in Hengelo? Nee, in heel Twente en online in heel Nederland.
+- Werkt Siteregelaar alleen in Hengelo of Twente? Nee, in heel Nederland. Alles gaat online; klanten uit Twente kunnen ook langskomen aan de Markt 9 in Hengelo.
+- Werkt Sitehulpje overal in Nederland? Ja, Sitehulpje is volledig online en werkt voor elke website of webshop op WordPress, WooCommerce, Shopify of Magento 2, waar het bedrijf ook zit.
 - Hoe neem ik contact op? Bel of app 06 27 25 43 83, mail info@siteregelaar.nl of kom langs aan de Markt 9 in Hengelo.
 
 ## Pagina's
 - [Home](https://siteregelaar.nl/)
-- [Website laten maken in Hengelo](https://siteregelaar.nl/website-laten-maken-hengelo)
+- [Website laten maken (lokale pagina Hengelo)](https://siteregelaar.nl/website-laten-maken-hengelo)
 - [Website onderhoud](https://siteregelaar.nl/website-onderhoud)
-- [SEO in Hengelo en Twente](https://siteregelaar.nl/seo-hengelo)
+- [SEO en vindbaarheid (lokale pagina Hengelo en Twente)](https://siteregelaar.nl/seo-hengelo)
 
 ## Optional
 - [Volledige tekst van alle pagina's](https://siteregelaar.nl/llms-full.txt)

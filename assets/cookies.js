@@ -31,10 +31,11 @@
     css.textContent =
       "#sr-cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;" +
       "background:#0c1a36;color:#e8f0ff;border:1px solid rgba(34,227,196,.45);border-radius:16px;padding:16px 18px;" +
-      "font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;box-shadow:0 18px 40px -12px rgba(0,0,0,.55)}" +
+      "font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;box-shadow:0 18px 40px -12px rgba(0,0,0,.55)}" +
       "#sr-cookies p{margin:0 0 12px}#sr-cookies .r{display:flex;gap:10px;flex-wrap:wrap}" +
-      "#sr-cookies button{cursor:pointer;border-radius:10px;padding:10px 16px;font:inherit;font-weight:700;border:1px solid rgba(255,255,255,.25);background:transparent;color:#e8f0ff}" +
-      "#sr-cookies button.ja{border:0;color:#04111a;background:linear-gradient(135deg,#22e3c4,#3b82f6)}";
+      "#sr-cookies button{cursor:pointer;border-radius:10px;padding:10px 16px;font:inherit;font-weight:600;border:1.5px solid transparent;color:#e8f0ff;background:linear-gradient(rgba(7,11,20,.6),rgba(7,11,20,.6)) padding-box,linear-gradient(135deg,#22e3c4,#3b82f6) border-box;box-shadow:0 0 0 3px rgba(34,227,196,.08);transition:box-shadow .2s,background .2s}" +
+      "#sr-cookies button:hover{box-shadow:0 0 22px rgba(34,227,196,.45)}" +
+      "#sr-cookies button.ja{color:#e6fffa;background:linear-gradient(135deg,rgba(34,227,196,.18),rgba(59,130,246,.18)) padding-box,linear-gradient(135deg,#22e3c4,#3b82f6) border-box;box-shadow:0 0 18px -2px rgba(34,227,196,.45)}";
     document.head.appendChild(css);
     var d = document.createElement("div");
     d.id = "sr-cookies"; d.setAttribute("role", "dialog"); d.setAttribute("aria-label", "Cookies");

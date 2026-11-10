@@ -59,13 +59,13 @@
 
   function oplossen(d, tool) {
     const n = (d.items || []).filter((i) => i.status !== "goed").length;
-    if (!n) return `<div class="srt-cta srt-cta-goed"><b>Netjes! Hier valt weinig te verbeteren.</b><span>Probeer gerust een andere check hieronder, of laat je hele website gratis nakijken.</span><a class="knop rand" href="/#check">Volledige website-check</a></div>`;
+    if (!n) return `<div class="srt-cta srt-cta-goed"><b>Netjes! Hier valt weinig te verbeteren.</b><span>Probeer gerust een andere check hieronder, of laat je hele website gratis nakijken.</span><a class="knop rand" href="https://siteregelaar.nl/#check">Volledige website-check</a></div>`;
     return `<div class="srt-cta"><div><b>${n === 1 ? "1 punt" : n + " punten"} om te verbeteren</b><span>Sitehulpje lost dit voor je op. Je bevindingen gaan direct mee naar je account, dus je hoeft niets opnieuw uit te leggen.</span></div>
       <a class="knop" href="${BESTEL}?ref=check:${e(d.id)}&sh=1">Laat Sitehulpje dit oplossen →</a></div>`;
   }
   function meer(tool) {
     const keuze = Object.entries(TOOLS).filter(([k]) => k !== tool).sort(() => Math.random() - 0.5).slice(0, 4);
-    return `<div class="srt-meer"><span class="zacht">Doe nog een check:</span>${keuze.map(([k, t]) => `<a href="/tools/${t.pad}">${t.ico} ${e(t.naam)}</a>`).join("")}<a href="/tools">Alle tools →</a></div>`;
+    return `<div class="srt-meer"><span class="zacht">Doe nog een check:</span>${keuze.map(([k, t]) => `<a href="https://siteregelaar.nl/tools/${t.pad}">${t.ico} ${e(t.naam)}</a>`).join("")}</div>`;
   }
 
   function maakMeetTool(el, tool, t) {
@@ -146,7 +146,7 @@
         <label><span>Hoe lang laadt je site nu? (seconden)</span><input name="nu" type="number" min="0" step="0.5" value="5"></label>
         <label><span>Snel is (seconden)</span><input name="doel" type="number" min="0" step="0.5" value="2"></label>
       </div>
-      <p class="zacht srt-klein">Weet je niet hoe snel je site is? <a href="/tools/snelheidstest">Doe eerst de snelheidstest</a>.</p></form><div class="srt-uit"></div>`;
+      <p class="zacht srt-klein">Weet je niet hoe snel je site is? <a href="https://siteregelaar.nl/tools/snelheidstest">Doe eerst de snelheidstest</a>.</p></form><div class="srt-uit"></div>`;
     const f = el.querySelector("form"), uit = el.querySelector(".srt-uit");
     const reken = () => {
       const v = (n) => Math.max(0, Number(f[n].value) || 0);
@@ -179,6 +179,7 @@
     f.oninput = teken; teken();
   }
 
+  window.SR_RENDER = { ring, itemsHtml, EXTRA, e };
   function start() {
     document.querySelectorAll("[data-sr-tool]").forEach((el) => {
       const tool = el.dataset.srTool, t = TOOLS[tool]; if (!t || el.dataset.klaar) return; el.dataset.klaar = "1"; el.classList.add("srt");

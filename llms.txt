@@ -95,3 +95,7 @@ Ondernemers kunnen hun huidige website gratis laten controleren: https://sitehul
 ## Verwante merken van Siteregelaar
 - Sitehulpje (https://sitehulpje.nl/): het programma van Siteregelaar om websites aan te passen door het te vragen, met landingspagina's per branche en per systeem
 - Shopregelaar (https://shopregelaar.nl/): de webshoptak van Siteregelaar
+
+## Gratis tools
+- [Alle gratis tools](https://siteregelaar.nl/tools): snelheidstest, vergelijking met je concurrent, vindbaar in ChatGPT, mail-check en meer
+- [Werkgebied](https://siteregelaar.nl/werkgebied): websites laten maken in Twente, de Achterhoek, Salland en het Vechtdal

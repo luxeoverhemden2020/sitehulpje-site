@@ -107,7 +107,7 @@
   if (/[?&](link|code)=/.test(location.search)) location.replace("https://sitehulpje.nl/inloggen" + location.search);
 </script>
 <link rel="stylesheet" href="assets/stijl.css?v=20261110c">
-<link rel="stylesheet" href="assets/home.css">
+<link rel="stylesheet" href="assets/home.css?v=20261110">
 <link rel="stylesheet" href="assets/wow.css">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="Siteregelaar voor AI">
 <script src="/assets/cookies.js?v=20261110"></script>
@@ -115,16 +115,15 @@
 <body class="home">
 
 <header class="kop">
-  <span class="bot-klein" id="kopbot"></span>
-  <div class="merk">Site<b>regelaar</b></div>
-  <nav class="rechts">
-    <a class="navlink verberg-mobiel" href="#probeer">Probeer het</a>
-    <a class="navlink verberg-mobiel" href="#sitehulpje">Sitehulpje</a>
-    <a class="navlink verberg-mobiel" href="https://sitehulpje.nl">Al een site?</a>
-    <a class="navlink verberg-mobiel" href="#aanbod">Website laten maken</a>
+  <a href="/" class="bot-klein" id="kopbot" aria-label="Siteregelaar, naar de homepage"></a>
+  <a href="/" class="merk" style="text-decoration:none;color:inherit">Site<b>regelaar</b></a>
+  <nav class="rechts" aria-label="Hoofdmenu">
+    <a class="navlink verberg-mobiel" href="/website-laten-maken-hengelo">Website laten maken</a>
     <a class="navlink verberg-mobiel" href="https://shopregelaar.nl">Webshop</a>
-    <a class="navlink verberg-mobiel" href="#portfolio">Portfolio</a>
+    <a class="navlink verberg-mobiel" href="/#sitehulpje">Sitehulpje</a>
+    <a class="navlink verberg-mobiel" href="/#portfolio">Portfolio</a>
     <a class="navlink verberg-mobiel" href="/vindbaarheid">Vindbaarheid</a>
+    <a class="navlink verberg-mobiel" href="/#contact">Contact</a>
     <button class="knop rand klein thema" type="button"></button>
     <a class="knop klein" href="https://sitehulpje.nl/inloggen">Inloggen</a>
   </nav>

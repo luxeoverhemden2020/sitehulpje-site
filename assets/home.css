@@ -474,3 +474,6 @@ body.zm-zicht .zm-item,body.zm-los .zm-item{animation:zmIn .5s cubic-bezier(.2,.
 }
 .voet-nap a{color:inherit}.voet-nap{flex-basis:100%}
 .voet-nap a[href^="tel"]{white-space:nowrap}
+
+/* bovenmenu: op tablet alleen het hamburgermenu, zodat de balk niet in twee regels breekt */
+@media (max-width:1080px){.kop .navlink{display:none}}

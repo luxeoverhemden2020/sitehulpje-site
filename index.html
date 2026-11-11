@@ -160,6 +160,39 @@
     </div>
   </section>
 
+  <!-- GRATIS WEBSITE-CHECK -->
+  <section id="gratis-check" class="wrap breed blok">
+    <style>
+    .gc{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center;padding:24px 26px;border-color:rgba(34,227,196,.45);box-shadow:var(--glow);position:relative;overflow:hidden}
+    .gc::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--accent),#3b82f6,var(--paars))}
+    .gc h2{margin:4px 0 6px;font-size:clamp(22px,3vw,30px);text-wrap:balance}.gc p{margin:0}
+    .gc-form{display:flex;flex-direction:column;gap:10px}
+    .gc-form input{font-size:17px;padding:14px 16px}
+    .gc-form .knop{justify-content:center}
+    .gc-belofte{font-size:13px;color:var(--zacht);text-align:center}
+    @media (max-width:800px){.gc{grid-template-columns:1fr;padding:20px}}
+    </style>
+    <div class="kaart gc">
+      <div>
+        <p class="label mono">&gt;_ gratis website-check</p>
+        <h2>Hoe goed word jij gevonden? <span class="glans">In Google én AI.</span></h2>
+        <p class="zacht">Vul je website in. Wij controleren ruim 30 punten en sturen je binnen een paar uur een helder rapport.</p>
+      </div>
+      <form class="gc-form" id="gcform" novalidate>
+        <input id="gc_site" inputmode="url" autocomplete="url" placeholder="www.jouwbedrijf.nl" aria-label="Adres van je website">
+        <button class="knop groot-knop">Start de gratis check →</button>
+        <span class="gc-belofte">✓ gratis &nbsp; ✓ geen verplichtingen &nbsp; ✓ ± 1 minuut</span>
+      </form>
+    </div>
+    <script>
+    document.getElementById("gcform").onsubmit = (e) => {
+      e.preventDefault(); const i = document.getElementById("gc_site"), v = i.value.trim();
+      if (!/\.[a-z]{2,}/i.test(v)) { i.focus(); i.placeholder = "Vul je websiteadres in, bijv. www.jouwbedrijf.nl"; return; }
+      location.href = "/vindbaarheid?site=" + encodeURIComponent(v) + "#contact";
+    };
+    </script>
+  </section>
+
   <!-- PROBEER HET ZELF -->
   <section id="probeer" class="wrap breed blok probeer">
     <div class="probeer-kop">

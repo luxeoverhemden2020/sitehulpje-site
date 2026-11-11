@@ -427,13 +427,13 @@
           <div class="wz-kop"><span class="wz-ic paars">🔎</span><div><h3>Hier willen we je op laten vinden</h3><p class="zacht">Wat verkoop je of wat doe je?</p></div></div>
           <span class="wz-auto" id="c_woordauto" hidden>✨ gevonden op je site</span>
           <div class="labelveld" id="c_labels"><input id="c_woord" autocomplete="off" placeholder="Typ en druk op Enter" aria-label="Zoekwoorden"></div>
-          <p class="veld-hint" id="c_woordhint">Vul gerust aan. Je kunt het later in je account wijzigen of aanvullen.</p>
+          <p class="veld-hint" id="c_woordhint">Vul gerust aan, tot 8 in totaal. Je kunt het later in je account wijzigen of aanvullen.</p>
         </div>
         <div class="wz-stap">
           <div class="wz-kop"><span class="wz-ic oranje">👥</span><div><h3>Dit zijn je concurrenten</h3><p class="zacht">In je rapport zie je wie waar wint. Mag ook leeg.</p></div></div>
           <span class="wz-auto oranje" id="c_concauto" hidden>✨ voorgesteld</span>
           <div class="labelveld" id="c_conc"><input id="c_concin" autocomplete="off" placeholder="bijvoorbeeld concurrent.nl" aria-label="Concurrenten"></div>
-          <p class="veld-hint" id="c_conchint">Vul gerust aan. Je kunt ze later in je account wijzigen of aanvullen.</p>
+          <p class="veld-hint" id="c_conchint">Vul gerust aan, tot 8 in totaal. Je kunt ze later in je account wijzigen of aanvullen.</p>
         </div>
         <div class="wz-stap">
           <div class="wz-kop"><span class="wz-ic">📍</span><div><h3>Waar zitten je klanten?</h3><p class="zacht">Dan weten we waar je gevonden moet worden.</p></div></div>
@@ -494,12 +494,12 @@ const tekenLabels = () => {
     x.onclick = () => { woorden.splice(i, 1); tekenLabels(); inp.focus(); };
     l.appendChild(x); veld.insertBefore(l, inp);
   });
-  inp.placeholder = woorden.length >= 5 ? "Maximaal 5" : woorden.length ? "Nog een?" : "Typ en druk op Enter";
-  inp.disabled = woorden.length >= 5;
+  inp.placeholder = woorden.length >= 8 ? "Maximaal 8" : woorden.length ? "Nog een?" : "Typ en druk op Enter";
+  inp.disabled = woorden.length >= 8;
 };
 const voegToe = () => {
   const inp = $("#c_woord");
-  inp.value.split(",").map((w) => w.trim()).filter(Boolean).forEach((w) => { if (woorden.length < 5 && !woorden.includes(w)) woorden.push(w.slice(0, 60)); });
+  inp.value.split(",").map((w) => w.trim()).filter(Boolean).forEach((w) => { if (woorden.length < 8 && !woorden.includes(w)) woorden.push(w.slice(0, 60)); });
   inp.value = ""; tekenLabels();
 };
 $("#c_woord").addEventListener("keydown", (e) => {
@@ -513,9 +513,9 @@ function tekenConc() {
   const veld = $("#c_conc"), inp = $("#c_concin");
   veld.querySelectorAll(".lbl").forEach((x) => x.remove());
   conc.forEach((w, i) => { const l = document.createElement("span"); l.className = "lbl"; l.textContent = w; const x = document.createElement("button"); x.type = "button"; x.textContent = "×"; x.setAttribute("aria-label", "Verwijder " + w); x.onclick = () => { conc.splice(i, 1); tekenConc(); }; l.appendChild(x); veld.insertBefore(l, inp); });
-  inp.disabled = conc.length >= 5; inp.placeholder = conc.length >= 5 ? "Maximaal 5" : conc.length ? "Nog een?" : "bijvoorbeeld concurrent.nl";
+  inp.disabled = conc.length >= 8; inp.placeholder = conc.length >= 8 ? "Maximaal 8" : conc.length ? "Nog een?" : "bijvoorbeeld concurrent.nl";
 }
-function voegConc() { const inp = $("#c_concin"); inp.value.split(",").map((w) => w.trim().replace(/^https?:\/\/(www\.)?/i, "").replace(/\/.*$/, "")).filter((w) => /\.[a-z]{2,}$/i.test(w)).forEach((w) => { if (conc.length < 5 && !conc.includes(w)) conc.push(w.slice(0, 60)); }); inp.value = ""; tekenConc(); }
+function voegConc() { const inp = $("#c_concin"); inp.value.split(",").map((w) => w.trim().replace(/^https?:\/\/(www\.)?/i, "").replace(/\/.*$/, "")).filter((w) => /\.[a-z]{2,}$/i.test(w)).forEach((w) => { if (conc.length < 8 && !conc.includes(w)) conc.push(w.slice(0, 60)); }); inp.value = ""; tekenConc(); }
 $("#c_concin").addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === ",") { e.preventDefault(); voegConc(); } else if (e.key === "Backspace" && !e.target.value && conc.length) { conc.pop(); tekenConc(); } });
 $("#c_concin").addEventListener("blur", voegConc);
 $("#c_conc").addEventListener("click", (e) => { if (e.target.id === "c_conc") $("#c_concin").focus(); });
@@ -527,10 +527,10 @@ $("#c_site").addEventListener("change", async () => {
   try {
     const r = await fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/sr-voorstel", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ actie: "voorstel", site: s }) });
     const d = await r.json();
-    (d.woorden || []).forEach((w) => { if (woorden.length < 5 && !woorden.includes(w)) woorden.push(w); }); tekenLabels();
-    (d.concurrenten || []).forEach((c) => { if (conc.length < 5 && !conc.includes(c.site)) conc.push(c.site); }); tekenConc();
+    (d.woorden || []).slice(0, 4).forEach((w) => { if (woorden.length < 8 && !woorden.includes(w)) woorden.push(w); }); tekenLabels();
+    (d.concurrenten || []).slice(0, 4).forEach((c) => { if (conc.length < 8 && !conc.includes(c.site)) conc.push(c.site); }); tekenConc();
     if (d.plaats && !$("#c_plaats").value) { $("#c_plaats").value = d.plaats; const g = document.querySelector("input[name=c_gebied][value=plaatselijk]"); if (g && !document.querySelector("input[name=c_gebied]:checked")) { g.checked = true; $("#c_plaatsrij").hidden = false; } }
-    hint.textContent = (d.woorden || []).length ? "Klopt het niet helemaal? Haal weg of vul aan. Je kunt het later in je account wijzigen of aanvullen." : oud; ch.textContent = coud;
+    hint.textContent = (d.woorden || []).length ? "Klopt het niet helemaal? Haal weg of vul aan, tot 8 in totaal. Je kunt het later in je account wijzigen of aanvullen." : oud; ch.textContent = coud;
     $("#c_woordauto").hidden = !(d.woorden || []).length; $("#c_concauto").hidden = !(d.concurrenten || []).length;
   } catch { hint.textContent = oud; ch.textContent = coud; }
 });

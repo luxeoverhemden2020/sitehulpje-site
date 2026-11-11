@@ -557,7 +557,7 @@ $("#wz_terug").onclick = () => { toonMelding($("#cmeld"), ""); if (wz > 0) wzGa(
 $("#c_site").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); wzVolgende(); } });
 $("#c_berichtknop").onclick = () => { $("#c_bericht").hidden = false; $("#c_berichtknop").hidden = true; $("#c_bericht").focus(); };
 wzGa(0);
-(() => { const q = new URLSearchParams(location.search).get("site"); if (!q) return; $("#c_site").value = q.slice(0, 200); $("#c_site").dispatchEvent(new Event("change")); wzGa(1); setTimeout(() => document.getElementById("contact").scrollIntoView({ block: "start" }), 50); })();
+(() => { const q = new URLSearchParams(location.search).get("site"); if (!q) return; $("#c_site").value = q.slice(0, 200); $("#c_site").dispatchEvent(new Event("change")); wzGa(1); const naar = () => { const y = document.getElementById("contact").getBoundingClientRect().top + scrollY - 80; scrollTo({ top: y, behavior: "instant" }); }; setTimeout(naar, 60); addEventListener("load", () => setTimeout(naar, 60), { once: true }); })();
 $("#cform").onsubmit = async (e) => {
   e.preventDefault(); if (wz !== wzS.length - 1) return wzVolgende();
   if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test($("#c_email").value.trim())) return wzFout($("#c_email"), "Vul een geldig e-mailadres in, dan kunnen we je het rapport sturen.");

@@ -320,28 +320,48 @@
 
   <!-- CONTACT -->
   <section id="contact" class="wrap blok">
-    <div class="kaart contact">
-      <div class="rij" style="align-items:center;gap:14px;margin-bottom:6px"><span class="bot-mid" id="contactbot"></span>
-        <div><h2 style="margin:0">Gratis kennismaken</h2><p class="zacht" style="margin:2px 0 0">Laat je gegevens achter. Jan neemt snel contact met je op.</p></div></div>
+    <style>
+    .km{max-width:640px;margin:0 auto;padding:clamp(22px,4vw,34px)}
+    .km-kop{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+    .km-jan{width:64px;height:64px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;color:#063A33;background:linear-gradient(135deg,#E3FCF6,#E6EEFF);border:2px solid var(--accent)}
+    .km-kop h2{margin:0;font-size:clamp(22px,3vw,28px)}
+    .km-kop p{margin:4px 0 0}
+    .km-keus{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:6px 0 4px}
+    .km-keus label{display:flex;align-items:center;justify-content:center;gap:10px;padding:18px 14px;border-radius:14px;border:1.5px solid var(--lijn,#D3DEEE);font-weight:700;font-size:17px;cursor:pointer;background:rgba(255,255,255,.6)}
+    .km-keus input{position:absolute;opacity:0;width:1px;height:1px}
+    .km-keus label:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 4px rgba(34,227,196,.15);background:linear-gradient(135deg,#E3FCF6,#E6EEFF);color:#063A33}
+    .km-keus label:has(input:focus-visible){outline:2px solid #3b82f6;outline-offset:2px}
+    .km-velden{display:grid;gap:12px;margin-top:16px}
+    .km details{margin-top:12px}
+    .km summary{cursor:pointer;font-weight:600}
+    .km-belofte{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;font-size:14px}
+    @media (max-width:520px){.km-keus{grid-template-columns:1fr}}
+    </style>
+    <div class="kaart km">
+      <div class="km-kop"><div class="km-jan" aria-hidden="true">J</div>
+        <div><h2>Gratis kennismaken met Jan</h2><p class="zacht">Binnen één werkdag neem ik contact met je op.</p></div></div>
       <form id="cform">
-        <label>Waar ben je naar op zoek?</label>
-        <div class="keuzes" role="radiogroup">
-          <label class="keuze"><input type="radio" name="c_keuze" value="Ik wil een nieuwe website" checked><span>🌐 Een website</span></label>
-          <label class="keuze"><input type="radio" name="c_keuze" value="Ik wil een nieuwe webshop"><span>🛍️ Een webshop</span></label>
-          <label class="keuze"><input type="radio" name="c_keuze" value="Ik heb al een website en wil Sitehulpje koppelen"><span>🤖 Alleen Sitehulpje (ik heb al een site)</span></label>
-          <label class="keuze"><input type="radio" name="c_keuze" value="Ik wil eerst meer informatie"><span>💬 Eerst meer weten</span></label>
+        <p style="margin:0;font-weight:700">Wat wil je laten maken?</p>
+        <div class="km-keus" role="radiogroup" aria-label="Wat wil je laten maken?">
+          <label><input type="radio" name="c_keuze" value="Ik wil een nieuwe website" checked>Een website</label>
+          <label><input type="radio" name="c_keuze" value="Ik wil een nieuwe webshop">Een webshop</label>
         </div>
-        <div class="grid2">
+        <p class="zacht klein-tekst" style="margin:6px 0 0">Al een website? <a href="#gratis-check">Doe eerst de gratis check →</a></p>
+        <div class="km-velden">
           <div><label for="c_naam">Je naam *</label><input id="c_naam" autocomplete="name" required></div>
-          <div><label for="c_bedrijf">Bedrijf</label><input id="c_bedrijf" autocomplete="organization"></div>
-          <div><label for="c_contact">E-mail of telefoon *</label><input id="c_contact" autocomplete="email" required></div>
-          <div><label for="c_site">Je website (als je die al hebt)</label><input id="c_site" inputmode="url" placeholder="www.…"></div>
+          <div><label for="c_contact">Telefoon of e-mail *</label><input id="c_contact" autocomplete="tel" required></div>
+          <div><label for="c_bedrijf">Bedrijf (niet verplicht)</label><input id="c_bedrijf" autocomplete="organization"></div>
         </div>
-        <label for="c_bericht">Waar kunnen we je mee helpen?</label>
-        <textarea id="c_bericht" placeholder="Bijvoorbeeld: ik wil een webshop en zelf makkelijk mijn prijzen en acties kunnen aanpassen."></textarea>
+        <details><summary>Wil je alvast iets vertellen?</summary>
+          <label for="c_bericht" class="zacht klein-tekst" style="display:block;margin-top:8px">Bijvoorbeeld wat voor bedrijf je hebt of wat je belangrijk vindt</label>
+          <textarea id="c_bericht" placeholder="Ik heb een kapsalon en wil dat klanten online een afspraak kunnen maken."></textarea>
+        </details>
+        <input id="c_site" type="hidden" value="">
         <input id="c_website2" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
         <div id="cmeld" class="verborgen"></div>
-        <button class="knop groot-knop" id="cknop" style="margin-top:12px">Verstuur</button>
+        <button class="knop groot-knop" id="cknop" style="margin-top:16px;width:100%;justify-content:center">Plan mijn gratis kennismaking</button>
+        <div class="km-belofte zacht"><span>✓ gratis en vrijblijvend</span><span>✓ binnen één werkdag reactie</span></div>
+        <p class="zacht klein-tekst" style="margin:12px 0 0">Liever meteen bellen of appen? <a href="tel:+31627254383">06 27 25 43 83</a></p>
       </form>
     </div>
   </section>
@@ -361,7 +381,7 @@
 <script>
 $("#kopbot").innerHTML = robotSvg("rust");
 if ($("#telbot")) $("#telbot").innerHTML = robotSvg("rust");
-$("#contactbot").innerHTML = robotSvg("zwaai");
+if ($("#contactbot")) $("#contactbot").innerHTML = robotSvg("zwaai");
 if ($("#losbot")) $("#losbot").innerHTML = robotSvg("zwaai kijkt");
 if ($("#orbitbot")) $("#orbitbot").innerHTML = robotSvg("zwaai kijkt");
 document.querySelectorAll("[data-keuze]").forEach((a) => a.addEventListener("click", () => {
@@ -401,7 +421,7 @@ $("#cform").onsubmit = async (e) => {
       bericht: "Keuze: " + (document.querySelector("input[name=c_keuze]:checked")?.value || "-") + "\n\n" + $("#c_bericht").value,
       website2: $("#c_website2").value, bron: location.hostname });
     $("#cform").reset();
-    toonMelding($("#cmeld"), "Bedankt! Je bericht is verstuurd. Jan neemt snel contact met je op.", "ok");
+    toonMelding($("#cmeld"), "Bedankt! Jan neemt binnen één werkdag contact met je op.", "ok");
   } catch (err) { toonMelding($("#cmeld"), err.message); }
   $("#cknop").disabled = false;
 };

@@ -401,7 +401,10 @@
         </div>
         <label for="c_woord">Wat verkoop je of wat doe je?</label>
         <div class="labelveld" id="c_labels"><input id="c_woord" autocomplete="off" placeholder="Typ en druk op Enter"></div>
-        <p class="veld-hint">Bijvoorbeeld: loodgieter Hengelo, bruidskapsel, e-bike reparatie, elektricien. Een paar woorden is genoeg.</p>
+        <p class="veld-hint" id="c_woordhint">Zodra je je websiteadres hebt ingevuld, vullen we dit voor je in. Vul gerust aan. Je kunt het later in je account wijzigen of aanvullen.</p>
+        <label for="c_concin">Je concurrenten <span class="zacht">(mag leeg)</span></label>
+        <div class="labelveld" id="c_conc"><input id="c_concin" autocomplete="off" placeholder="bijvoorbeeld concurrent.nl"></div>
+        <p class="veld-hint">We stellen er een paar voor. Vul gerust aan. Je kunt ze later in je account wijzigen of aanvullen.</p>
         <label>Waar zitten je klanten?</label>
         <div class="keuzes gebied" role="radiogroup" aria-label="Waar zitten je klanten?">
           <label class="keuze"><input type="radio" name="c_gebied" value="plaatselijk"><span>📍 Plaatselijk<small>je eigen stad of dorp</small></span></label>
@@ -457,6 +460,32 @@ $("#c_woord").addEventListener("keydown", (e) => {
   else if (e.key === "Backspace" && !e.target.value && woorden.length) { woorden.pop(); tekenLabels(); }
 });
 $("#c_woord").addEventListener("blur", voegToe);
+// concurrenten: zelfde soort labelveld
+const conc = [];
+function tekenConc() {
+  const veld = $("#c_conc"), inp = $("#c_concin");
+  veld.querySelectorAll(".lbl").forEach((x) => x.remove());
+  conc.forEach((w, i) => { const l = document.createElement("span"); l.className = "lbl"; l.textContent = w; const x = document.createElement("button"); x.type = "button"; x.textContent = "×"; x.setAttribute("aria-label", "Verwijder " + w); x.onclick = () => { conc.splice(i, 1); tekenConc(); }; l.appendChild(x); veld.insertBefore(l, inp); });
+  inp.disabled = conc.length >= 5; inp.placeholder = conc.length >= 5 ? "Maximaal 5" : conc.length ? "Nog een?" : "bijvoorbeeld concurrent.nl";
+}
+function voegConc() { const inp = $("#c_concin"); inp.value.split(",").map((w) => w.trim().replace(/^https?:\/\/(www\.)?/i, "").replace(/\/.*$/, "")).filter((w) => /\.[a-z]{2,}$/i.test(w)).forEach((w) => { if (conc.length < 5 && !conc.includes(w)) conc.push(w.slice(0, 60)); }); inp.value = ""; tekenConc(); }
+$("#c_concin").addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === ",") { e.preventDefault(); voegConc(); } else if (e.key === "Backspace" && !e.target.value && conc.length) { conc.pop(); tekenConc(); } });
+$("#c_concin").addEventListener("blur", voegConc);
+$("#c_conc").addEventListener("click", (e) => { if (e.target.id === "c_conc") $("#c_concin").focus(); });
+// na het invullen van de website: zoekwoorden, plaats en concurrenten voorstellen
+let laatsteSite = "";
+$("#c_site").addEventListener("change", async () => {
+  const s = $("#c_site").value.trim(); if (!s || s === laatsteSite) return; laatsteSite = s;
+  const hint = $("#c_woordhint"), oud = hint.textContent; hint.textContent = "Even kijken op je website…";
+  try {
+    const r = await fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/sr-voorstel", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ actie: "voorstel", site: s }) });
+    const d = await r.json();
+    (d.woorden || []).forEach((w) => { if (woorden.length < 5 && !woorden.includes(w)) woorden.push(w); }); tekenLabels();
+    (d.concurrenten || []).forEach((c) => { if (conc.length < 5 && !conc.includes(c.site)) conc.push(c.site); }); tekenConc();
+    if (d.plaats && !$("#c_plaats").value) { $("#c_plaats").value = d.plaats; const g = document.querySelector("input[name=c_gebied][value=plaatselijk]"); if (g && !document.querySelector("input[name=c_gebied]:checked")) { g.checked = true; $("#c_plaatsrij").hidden = false; } }
+    hint.textContent = (d.woorden || []).length ? "Dit hebben we op je website gevonden. Klopt het niet helemaal? Haal weg of vul aan. Je kunt het later in je account wijzigen of aanvullen." : oud;
+  } catch { hint.textContent = oud; }
+});
 $("#c_labels").addEventListener("click", (e) => { if (e.target.id === "c_labels") $("#c_woord").focus(); });
 document.querySelectorAll("input[name=c_gebied]").forEach((r) => r.addEventListener("change", () => {
   $("#c_plaatsrij").hidden = !["plaatselijk", "regionaal"].includes(r.value);
@@ -466,13 +495,14 @@ $("#cform").onsubmit = async (e) => {
   try {
     const r = await fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/vb-check", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({
       actie: "aanvraag", site: $("#c_site").value, email: $("#c_email").value, naam: $("#c_naam").value, bedrijf: $("#c_bedrijf").value,
-      woorden, werkgebied: document.querySelector("input[name=c_gebied]:checked")?.value || "", plaats: $("#c_plaatsrij").hidden ? "" : $("#c_plaats").value,
+      woorden, concurrenten: conc, werkgebied: document.querySelector("input[name=c_gebied]:checked")?.value || "", plaats: $("#c_plaatsrij").hidden ? "" : $("#c_plaats").value,
       bericht: $("#c_bericht").value, keuze: document.querySelector("input[name=c_keuze]:checked")?.value || "", sitehulpje: $("#c_sh").checked,
       website2: $("#c_website2").value, bron: location.hostname }) });
     const d = await r.json().catch(() => ({}));
     if (!r.ok) throw new Error(d.fout || "Versturen lukte niet. Probeer het zo nog eens.");
     const naar = $("#c_email").value.trim();
-    $("#cform").reset(); woorden.length = 0; tekenLabels(); $("#c_plaatsrij").hidden = true;
+    fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/sr-voorstel", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ actie: "kies", site: $("#c_site").value, concurrenten: conc }) }).catch(() => {});
+    $("#cform").reset(); woorden.length = 0; tekenLabels(); conc.length = 0; tekenConc(); laatsteSite = ""; $("#c_plaatsrij").hidden = true;
     toonMelding($("#cmeld"), `Bedankt! We controleren je website nu. Binnen een paar uur krijg je het rapport per mail op ${naar}. Niets gezien? Kijk even bij je reclame of spam.`, "ok");
   } catch (err) { toonMelding($("#cmeld"), err.message); }
   $("#cknop").disabled = false;

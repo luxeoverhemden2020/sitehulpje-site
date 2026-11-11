@@ -94,7 +94,7 @@
 .wz-top{display:flex;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--zacht);margin:14px 0 6px}
 .wz-top span:first-child{color:var(--accent);font-weight:600}
 .wz-balk{height:6px;border-radius:99px;background:var(--lijn);overflow:hidden;margin-bottom:20px}
-.wz-balk i{display:block;height:100%;width:16.6%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--paars));box-shadow:0 0 12px var(--accent);transition:width .35s ease}
+.wz-balk i{display:block;height:100%;width:20%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--paars));box-shadow:0 0 12px var(--accent);transition:width .35s ease}
 .wz-stap{display:none}.wz-stap.aan{display:block;animation:wzIn .3s ease}
 @keyframes wzIn{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
 .wz-kop{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}.wz-kop h3{margin:0 0 2px;font-size:21px;text-wrap:balance}.wz-kop p{margin:0}
@@ -109,6 +109,7 @@
 .wz-link{background:none;border:0;color:var(--accent);font:inherit;font-size:14px;cursor:pointer;padding:10px 0 0}
 .wz-nav [hidden],.wz-stap [hidden]{display:none!important}
 .wz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px}.wz-nav .groot-knop{margin-left:auto}
+.wz-gekozen{margin:10px 0 0;font-size:14px;color:var(--zacht)}.wz-gekozen b{color:var(--accent)}.wz-gekozen button{background:none;border:0;color:var(--zacht);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
 .wz-belofte{text-align:center;font-size:13px;color:var(--zacht);margin:14px 0 0}
 .wz-schud{animation:wzSchud .35s}@keyframes wzSchud{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 @media (max-width:560px){.wz-kop h3{font-size:18px}.wz-ic{width:40px;height:40px;font-size:19px}}
@@ -405,14 +406,7 @@
       <div class="rij" style="align-items:center;gap:14px;margin-bottom:6px"><span class="bot-mid" id="contactbot"></span>
         <div><h2 style="margin:0">Gratis website-check</h2><p class="zacht" style="margin:2px 0 0">Laat je gegevens achter. Jan stuurt je de uitkomst en neemt contact met je op.</p></div></div>
       <form id="cform" novalidate>
-        <div class="wz-top"><span id="wz_tel">STAP 1/6</span><span>± 1 minuut</span></div>
-        <div class="wz-balk"><i id="wz_bi"></i></div>
-        <div class="wz-stap aan">
-          <div class="wz-kop"><span class="wz-ic">🌐</span><div><h3>Wat is je website?</h3><p class="zacht">Dan gaan wij alvast kijken terwijl jij verder invult.</p></div></div>
-          <input id="c_site" inputmode="url" autocomplete="url" placeholder="www.jouwbedrijf.nl" aria-label="Adres van je website">
-        </div>
-        <div class="wz-stap">
-          <div class="wz-kop"><span class="wz-ic">🎯</span><div><h3>Waar ben je naar op zoek?</h3><p class="zacht">Weet je het nog niet? Kies de gratis check.</p></div></div>
+        <div hidden>
         <div class="keuzes" role="radiogroup">
           <label class="keuze"><input type="radio" name="c_keuze" value="Ik wil een gratis website-check voor Vindbaarheid" checked><span>🩺 Gratis check</span></label>
           <label class="keuze"><input type="radio" name="c_keuze" value="Ik heb interesse in Vindbaarheid Basis"><span>Basis</span></label>
@@ -421,6 +415,13 @@
           <label class="keuze"><input type="radio" name="c_keuze" value="Ik heb interesse in alleen Sitehulpje webbeheer"><span>Alleen Sitehulpje</span></label>
         </div>
         <label class="sh-vink" style="display:flex;gap:8px;align-items:center;margin:10px 0 0;font-weight:400"><input type="checkbox" id="c_sh" style="width:auto"> Ook Sitehulpje webbeheer erbij (€75 i.p.v. €125 per maand)</label>
+        </div>
+        <p class="wz-gekozen" id="wz_gekozen" hidden></p>
+        <div class="wz-top"><span id="wz_tel">STAP 1/5</span><span>± 1 minuut</span></div>
+        <div class="wz-balk"><i id="wz_bi"></i></div>
+        <div class="wz-stap aan">
+          <div class="wz-kop"><span class="wz-ic">🌐</span><div><h3>Wat is je website?</h3><p class="zacht">Dan gaan wij alvast kijken terwijl jij verder invult.</p></div></div>
+          <input id="c_site" inputmode="url" autocomplete="url" placeholder="www.jouwbedrijf.nl" aria-label="Adres van je website">
         </div>
         <div class="wz-stap">
           <div class="wz-kop"><span class="wz-ic paars">🔎</span><div><h3>Hier willen we je op laten vinden</h3><p class="zacht">Wat verkoop je of wat doe je?</p></div></div>
@@ -472,7 +473,16 @@ try { document.getElementById("kopbot").innerHTML = robotSvg("rust"); document.g
 document.querySelectorAll("[data-keuze]").forEach((a) => a.addEventListener("click", () => {
   const r = document.querySelector(`input[name=c_keuze][value="${a.dataset.keuze}"]`); if (r) r.checked = true;
   const v = document.getElementById("c_sh"); if (v) v.checked = a.dataset.sitehulpje === "1";
+  wzGekozen();
 }));
+function wzGekozen() {
+  const r = document.querySelector("input[name=c_keuze]:checked"), el = document.getElementById("wz_gekozen"), sh = document.getElementById("c_sh").checked;
+  const naam = r && !/gratis/i.test(r.value) ? (r.value.match(/(Basis|Plus|Pro|alleen Sitehulpje)/i) || [])[1] : "";
+  if (!naam && !sh) { el.hidden = true; return; }
+  el.innerHTML = `Je koos: <b>${naam || "Gratis check"}${sh && naam !== "alleen Sitehulpje" ? " + Sitehulpje" : ""}</b> · <button type="button" id="wz_wis">wijzigen</button>`;
+  el.hidden = false;
+  document.getElementById("wz_wis").onclick = () => { document.querySelector("input[name=c_keuze]").checked = true; document.getElementById("c_sh").checked = false; el.hidden = true; };
+}
 // labeltjes voor "Wat verkoop je of wat doe je?"
 const woorden = [];
 const tekenLabels = () => {
@@ -539,7 +549,7 @@ function wzFout(el, tekst) { toonMelding($("#cmeld"), tekst); el.classList.remov
 function wzVolgende() {
   toonMelding($("#cmeld"), "");
   if (wz === 0) { const v = $("#c_site").value.trim(); if (!/\.[a-z]{2,}/i.test(v)) return wzFout($("#c_site"), "Vul het adres van je website in, bijvoorbeeld www.jouwbedrijf.nl."); $("#c_site").dispatchEvent(new Event("change")); }
-  if (wz === 2) voegToe(); if (wz === 3) voegConc();
+  if (wz === 1) voegToe(); if (wz === 2) voegConc();
   if (wz < wzS.length - 1) wzGa(wz + 1);
 }
 $("#wz_volg").onclick = wzVolgende;
@@ -561,7 +571,7 @@ $("#cform").onsubmit = async (e) => {
     if (!r.ok) throw new Error(d.fout || "Versturen lukte niet. Probeer het zo nog eens.");
     const naar = $("#c_email").value.trim();
     fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/sr-voorstel", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ actie: "kies", site: $("#c_site").value, concurrenten: conc }) }).catch(() => {});
-    $("#cform").reset(); woorden.length = 0; tekenLabels(); conc.length = 0; tekenConc(); laatsteSite = ""; $("#c_plaatsrij").hidden = true; wzGa(0);
+    $("#cform").reset(); woorden.length = 0; tekenLabels(); conc.length = 0; tekenConc(); laatsteSite = ""; $("#c_plaatsrij").hidden = true; wzGa(0); wzGekozen();
     toonMelding($("#cmeld"), `Bedankt! We controleren je website nu. Binnen een paar uur krijg je het rapport per mail op ${naar}. Niets gezien? Kijk even bij je reclame of spam.`, "ok");
   } catch (err) { toonMelding($("#cmeld"), err.message); }
   $("#cknop").disabled = false;

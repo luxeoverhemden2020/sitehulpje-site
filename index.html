@@ -385,6 +385,12 @@ if ($("#telbot")) $("#telbot").innerHTML = robotSvg("rust");
 if ($("#contactbot")) $("#contactbot").innerHTML = robotSvg("zwaai");
 if ($("#losbot")) $("#losbot").innerHTML = robotSvg("zwaai kijkt");
 if ($("#orbitbot")) $("#orbitbot").innerHTML = robotSvg("zwaai kijkt");
+// vanaf de pakketten: "Vraag een aanbod" voor meerdere websites of webshops
+if (new URLSearchParams(location.search).get("aanbod") === "meerdere" && $("#c_bericht")) {
+  const b = $("#c_bericht"); b.value = "Ik heb meerdere websites of webshops en wil graag een aanbod op maat voor Sitehulpje. Het gaat om: "; const d = b.closest("details"); if (d) d.open = true;
+  const k = document.querySelector("#contact .km-kop h2"); if (k) k.textContent = "Aanbod op maat";
+  const p = document.querySelector("#contact .km-kop p"); if (p) p.textContent = "Vertel welke websites of vestigingen het zijn. Binnen één werkdag neem ik contact met je op.";
+}
 document.querySelectorAll("[data-keuze]").forEach((a) => a.addEventListener("click", () => {
   const r = document.querySelector(`input[name=c_keuze][value="${a.dataset.keuze}"]`); if (r) r.checked = true;
 }));

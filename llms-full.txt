@@ -47,14 +47,14 @@ Met Sitehulpje passen klanten zelf hun website of webshop aan door het te vragen
 - Wat het kan: teksten, prijzen, foto's, openingstijden, nieuwe pagina's, acties, producten, maten en kleuren, voorraad, kortingscodes, nieuws en blogs, vacatures, veelgestelde vragen en contactgegevens
 - Veilig: elke aanpassing is met één tik terug te draaien; bestellingen, betalingen en wachtwoorden blijven buiten bereik; grote wijzigingen worden eerst aan Jan voorgelegd
 - Werkt met: WordPress, WooCommerce, Shopify en Magento 2; ook aan een bestaande site te koppelen, de site blijft bij de eigen hoster
-- Prijs: €125 per maand exclusief btw, of €75 per maand in combinatie met een Vindbaarheid-pakket; minimale looptijd 3 maanden
+- Prijs: alleen Sitehulpje €125 per maand exclusief btw; in de pakketten Basis, Plus en Pro zit Sitehulpje er al in; minimale looptijd 3 maanden
 Meer: https://siteregelaar.nl/website-onderhoud en https://sitehulpje.nl/
 
 ### Vindbaarheid – SEO en lokale vindbaarheid in Google, Maps en AI
 Elke maand kijkt Siteregelaar wat er beter kan aan de website en voert die verbeteringen ook zelf door: techniek (snelheid, titels, kapotte links, bedrijfsgegevens voor Google), lokale vindbaarheid, nieuwe pagina's voor diensten waar klanten op zoeken en vindbaarheid in ChatGPT, Copilot en Google AI. De klant ziet in een dashboard wat er gedaan is. Siteregelaar belooft geen eerste plek in Google, omdat niemand dat eerlijk kan beloven.
-- Basis "Gezond & gevonden": €99 per maand
-- Plus "Lokaal groeien": €179 per maand
-- Pro "Voorsprong": €249 per maand
+- Sitehulpje Basis "Gezond & gevonden": €169 per maand (Sitehulpje inbegrepen)
+- Sitehulpje Plus "Lokaal groeien": €239 per maand (Sitehulpje inbegrepen)
+- Sitehulpje Pro "Voorsprong": €369 per maand (Sitehulpje en Google-advertentiebeheer inbegrepen); nieuwe klanten 10% korting het eerste jaar
 - Prijzen exclusief btw, minimale looptijd 3 maanden; werkt ook zonder Sitehulpje
 Meer: https://siteregelaar.nl/seo-hengelo en https://siteregelaar.nl/vindbaarheid
 
@@ -324,15 +324,15 @@ Sitehulpje werkt met WordPress, WooCommerce, Shopify en Magento 2. Je site blijf
 €125 per maand
 Een vaste prijs per maand, exclusief btw. Geen rekening meer voor elke kleine aanpassing.
 
-€75 per maand met Vindbaarheid
-Neem je er een Vindbaarheid-pakket bij, dan betaal je voor Sitehulpje €75 in plaats van €125 per maand.
+Ook gevonden worden? Vanaf €169
+In de pakketten Sitehulpje Basis, Plus en Pro zit Sitehulpje er al in.
 
 Wil je weten of Sitehulpje met jouw site werkt? Kijk bij WordPress, WooCommerce, Shopify of Magento 2, of bestel Sitehulpje direct.
 
 ### Veelgestelde vragen
 
 #### Wat kost website onderhoud bij Siteregelaar?
-Sitehulpje kost €125 per maand exclusief btw, of €75 per maand als je er een Vindbaarheid-pakket bij neemt. Geen uurtje-factuurtje voor kleine aanpassingen.
+Sitehulpje kost €125 per maand exclusief btw; in de pakketten vanaf €169 per maand zit het er al in. Geen uurtje-factuurtje voor kleine aanpassingen.
 
 #### Moet ik een nieuwe website laten maken?
 Nee. Sitehulpje koppelt aan je bestaande site op WordPress, WooCommerce, Shopify of Magento 2. Je site blijft gewoon van jou.
@@ -467,13 +467,13 @@ Vindbaarheid werkt los, maar samen met Sitehulpje betaal je minder voor allebei.
 
 ### De pakketten
 
-Basis – €99 per maand
+Sitehulpje Basis – €169 per maand
 Gezond en gevonden: de basis op orde en elke maand bijgehouden.
 
-Plus – €179 per maand
+Sitehulpje Plus – €239 per maand
 Lokaal groeien: meer pagina's per maand en de nadruk op je eigen regio, in Google, Maps en AI.
 
-Pro – €249 per maand
+Sitehulpje Pro – €369 per maand
 Voorsprong: voor bedrijven in een drukke markt of met een groter werkgebied.
 
 Alle details en wat elk pakket precies doet, lees je op sitehulpje.nl/vindbaarheid. Prijzen exclusief btw, minimaal 3 maanden, omdat resultaat in Google tijd nodig heeft.
@@ -481,7 +481,7 @@ Alle details en wat elk pakket precies doet, lees je op sitehulpje.nl/vindbaarhe
 ### Veelgestelde vragen
 
 #### Wat kost SEO bij Siteregelaar?
-Vindbaarheid kost €99 (Basis), €179 (Plus) of €249 (Pro) per maand, exclusief btw. De looptijd is minimaal 3 maanden, omdat resultaat in Google tijd nodig heeft.
+Sitehulpje Basis kost €169, Plus €239 en Pro €369 per maand, exclusief btw, met Sitehulpje inbegrepen. De looptijd is minimaal 3 maanden, omdat resultaat in Google tijd nodig heeft.
 
 #### Beloven jullie de eerste plek in Google?
 Nee. Niemand kan dat eerlijk beloven. We verbeteren wat op je site beter kan en laten zien wat het oplevert.
@@ -630,8 +630,8 @@ Werkt het met mijn site?
 
 voordeel
 Samen met Vindbaarheid
-€75/mnd €125
-Beter gevonden worden in Google én AI-diensten zoals ChatGPT. Neem je een Vindbaarheid-pakket (vanaf €99), dan kost Sitehulpje nog maar €75 per maand.
+vanaf €169/mnd
+Beter gevonden worden in Google én AI-diensten zoals ChatGPT. In de pakketten Basis, Plus en Pro (vanaf €169) zit Sitehulpje er al in.
 Bekijk de Vindbaarheid-pakketten →
 
 #### Extra opties binnenkort beschikbaar, prijzen per maand excl. btw
@@ -746,7 +746,7 @@ Steeds meer klanten zoeken via Google, maar ook via ChatGPT en andere AI-dienste
 
 Vraag een gratis website-check aan
 
-Voor elke website of webshop · vanaf €99 per maand · geen technische kennis nodig
+Voor elke website of webshop · vanaf €169 per maand, Sitehulpje inbegrepen · geen technische kennis nodig
 
 Elke weekeen website-check
 
@@ -784,7 +784,7 @@ Basis
 
 #### Gezond & gevonden
 
-€99 /mnd
+€169 /mnd
 
 Voor de lokale ondernemer die gewoon goed gevonden wil worden, zonder er zelf naar om te kijken.
 
@@ -808,7 +808,6 @@ Voor de lokale ondernemer die gewoon goed gevonden wil worden, zonder er zelf na
 
 Wij verbeteren tot 10 pagina's per maand · elke week tot 100 pagina's gecontroleerd
 
-+ Sitehulpje webbeheer €75/mnd €125
 Je site aanpassen door het gewoon te vragen.
 
 aanrader
@@ -817,7 +816,7 @@ Plus
 
 #### Lokaal groeien
 
-€179 /mnd
+€239 /mnd
 
 Voor het bedrijf dat meer klanten uit de eigen regio wil, via Google, Google Maps en AI.
 
@@ -837,14 +836,13 @@ Voor het bedrijf dat meer klanten uit de eigen regio wil, via Google, Google Map
 
 Wij verbeteren tot 30 pagina's per maand · elke week tot 500 pagina's gecontroleerd
 
-+ Sitehulpje webbeheer €75/mnd €125
 Je site aanpassen door het gewoon te vragen.
 
 Pro
 
 #### Voorsprong
 
-€249 /mnd
+€369 /mnd
 
 Voor de webshop of het bedrijf met veel concurrentie, dat wil weten waar het staat en verder wil komen.
 
@@ -864,7 +862,6 @@ Voor de webshop of het bedrijf met veel concurrentie, dat wil weten waar het sta
 
 Wij verbeteren tot 75 pagina's per maand · elke week tot 2.000 pagina's gecontroleerd
 
-+ Sitehulpje webbeheer €75/mnd €125
 Je site aanpassen door het gewoon te vragen.
 
 Meerdere websites of webshops? Zet het in je aanvraag, dan maken we een passend aanbod.
@@ -877,7 +874,7 @@ Alleen Sitehulpje
 Wil je geen Vindbaarheid, maar wel je website of webshop laten bijhouden? Vraag gewoon wat je wilt veranderen: teksten, foto's, prijzen, producten of een nieuwe pagina. Sitehulpje regelt het.
 
 €125 /mnd
-Met een Vindbaarheid-pakket erbij: €75 per maand
+In Basis, Plus en Pro zit Sitehulpje er al in
 Kies Sitehulpje
 
 ### Zo begin je
@@ -899,7 +896,7 @@ Eerlijk is eerlijk. Niemand kan een plek bovenaan in Google of een vermelding in
 Ja. De check en het dashboard werken met elke website of webshop. Verbeteringen voeren we automatisch door op WordPress en WooCommerce; bij andere systemen doet Jan het voor je.
 
 #### Heb ik Sitehulpje webbeheer nodig?
-Nee, Vindbaarheid kan los. Neem je het samen met een Vindbaarheid-pakket, dan kost Sitehulpje webbeheer €75 per maand in plaats van €125. Alles staat dan in hetzelfde account.
+Dat zit er al in. In Sitehulpje Basis, Plus en Pro kun je je website laten aanpassen door het gewoon te vragen. Alleen Sitehulpje kost €125 per maand.
 
 #### Hoe betaal ik?
 Na je akkoord betaal je de eerste (gedeeltelijke) maand via iDEAL. Daarna schrijven we elke maand automatisch af. Je krijgt de factuur een dag van tevoren, samen met je maandrapport.

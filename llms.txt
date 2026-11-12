@@ -45,14 +45,14 @@ Met Sitehulpje passen klanten zelf hun website of webshop aan door het te vragen
 - Wat het kan: teksten, prijzen, foto's, openingstijden, nieuwe pagina's, acties, producten, maten en kleuren, voorraad, kortingscodes, nieuws en blogs, vacatures, veelgestelde vragen en contactgegevens
 - Veilig: elke aanpassing is met één tik terug te draaien; bestellingen, betalingen en wachtwoorden blijven buiten bereik; grote wijzigingen worden eerst aan Jan voorgelegd
 - Werkt met: WordPress, WooCommerce, Shopify en Magento 2; ook aan een bestaande site te koppelen, de site blijft bij de eigen hoster
-- Prijs: €125 per maand exclusief btw, of €75 per maand in combinatie met een Vindbaarheid-pakket; minimale looptijd 3 maanden
+- Prijs: alleen Sitehulpje €125 per maand exclusief btw; in de pakketten Basis, Plus en Pro zit Sitehulpje er al in; minimale looptijd 3 maanden
 Meer: https://siteregelaar.nl/website-onderhoud en https://sitehulpje.nl/
 
 ### Vindbaarheid – SEO en lokale vindbaarheid in Google, Maps en AI
 Elke maand kijkt Siteregelaar wat er beter kan aan de website en voert die verbeteringen ook zelf door: techniek (snelheid, titels, kapotte links, bedrijfsgegevens voor Google), lokale vindbaarheid, nieuwe pagina's voor diensten waar klanten op zoeken en vindbaarheid in ChatGPT, Copilot en Google AI. De klant ziet in een dashboard wat er gedaan is. Siteregelaar belooft geen eerste plek in Google, omdat niemand dat eerlijk kan beloven.
-- Basis "Gezond & gevonden": €99 per maand
-- Plus "Lokaal groeien": €179 per maand
-- Pro "Voorsprong": €249 per maand
+- Sitehulpje Basis "Gezond & gevonden": €169 per maand (Sitehulpje inbegrepen)
+- Sitehulpje Plus "Lokaal groeien": €239 per maand (Sitehulpje inbegrepen)
+- Sitehulpje Pro "Voorsprong": €369 per maand (Sitehulpje en Google-advertentiebeheer inbegrepen); nieuwe klanten 10% korting het eerste jaar
 - Prijzen exclusief btw, minimale looptijd 3 maanden; werkt ook zonder Sitehulpje
 Meer: https://siteregelaar.nl/seo-hengelo en https://siteregelaar.nl/vindbaarheid
 

@@ -390,6 +390,8 @@ if (new URLSearchParams(location.search).get("aanbod") === "meerdere" && $("#c_b
   const b = $("#c_bericht"); b.value = "Ik heb meerdere websites of webshops en wil graag een aanbod op maat voor Sitehulpje. Het gaat om: "; const d = b.closest("details"); if (d) d.open = true;
   const k = document.querySelector("#contact .km-kop h2"); if (k) k.textContent = "Aanbod op maat";
   const p = document.querySelector("#contact .km-kop p"); if (p) p.textContent = "Vertel welke websites of vestigingen het zijn. Binnen één werkdag neem ik contact met je op.";
+  const kz = document.querySelector("#contact .km-keus"); if (kz) { const r = kz.querySelector("input[name=c_keuze]"); if (r) { r.value = "Aanbod op maat: meerdere websites of webshops"; r.checked = true; } [kz, kz.previousElementSibling, kz.nextElementSibling].forEach((el) => el && (el.style.display = "none")); }
+  const kn = document.querySelector("#cform button[type=submit], #cform .knop"); if (kn) kn.textContent = "Vraag mijn aanbod aan";
 }
 document.querySelectorAll("[data-keuze]").forEach((a) => a.addEventListener("click", () => {
   const r = document.querySelector(`input[name=c_keuze][value="${a.dataset.keuze}"]`); if (r) r.checked = true;

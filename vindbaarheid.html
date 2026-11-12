@@ -74,6 +74,15 @@
 .pk-klein{margin:4px 0 6px;font-size:13px;color:var(--zacht);border-top:1px solid var(--lijn);padding-top:8px}
 .pk .knop{align-self:flex-start}
 @media (max-width:900px){.pakketten3{grid-template-columns:1fr}}
+.pk-kort{margin:-4px 0 2px;font-size:13px;color:var(--accent)}
+.pkr-lijst{flex:1;margin:4px 0}
+.pkr{border-top:1px solid var(--lijn)}.pkr:last-child{border-bottom:1px solid var(--lijn)}
+.pkr summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:44px;font-size:15px}
+.pkr summary::-webkit-details-marker{display:none}
+.pkr-v{width:18px;font-weight:700;color:var(--accent)}.pkr-t{flex:1}.pkr.nee summary{opacity:.5}
+.pkr-pijl{transition:transform .2s;opacity:.6}.pkr[open] .pkr-pijl{transform:rotate(180deg);opacity:1;color:var(--accent)}
+.pkr-uit{margin:0 0 12px 28px;font-size:14px;line-height:1.5;padding:10px 12px;border-radius:10px;background:var(--accent2)}
+.pkr-uit p{margin:0}.pkr-uit ul{margin:0;padding-left:18px}.pkr-uit li{margin:2px 0}
 .pk-extra{display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline;margin-top:10px;padding:10px 12px;border:1px dashed var(--lijn);border-radius:12px;font-size:14px}
 .pk-extra-kop{font-weight:700}.pk-extra-prijs{font-family:"JetBrains Mono",monospace;font-weight:600}.pk-extra-prijs small{font-family:"Space Grotesk",sans-serif;color:var(--zacht);font-weight:400}
 .pk-extra-prijs s{color:var(--zacht);font-weight:400;margin-left:4px}.pk-extra-tekst{flex-basis:100%;color:var(--zacht)}.pk-extra-link{font-weight:600}
@@ -106,6 +115,17 @@
 .wz-auto.oranje{background:rgba(255,145,77,.14);color:#ff9a5a}
 #c_conc .lbl{background:rgba(255,145,77,.14);border-color:rgba(255,145,77,.5)}
 .wz-stap .keuze input:checked+span{border-color:var(--accent);background:var(--accent2);box-shadow:var(--glow)}
+.wz-zoek{display:none;align-items:center;gap:14px;padding:18px 16px;border-radius:16px;border:1px dashed rgba(139,92,246,.45);background:var(--paarsbg)}
+.wz-stap.zoekt .wz-zoek{display:flex}.wz-stap.zoekt .labelveld,.wz-stap.zoekt .veld-hint,.wz-stap.zoekt .wz-auto{display:none!important}
+.wz-zoek .zb{position:relative;width:64px;height:64px;flex:none;animation:zbDrijf 1.6s ease-in-out infinite}.wz-zoek .zb .bot{width:64px;height:64px}
+.wz-zoek .zb .lens{position:absolute;right:-6px;bottom:-2px;font-size:24px;animation:zbLens 1.2s ease-in-out infinite;transform-origin:30% 30%}
+.wz-zoek b{display:block;font-size:16px}.wz-zoek span{color:var(--zacht);font-size:14px}
+.wz-zoek .puntjes::after{content:"";animation:zbPunt 1.2s steps(4) infinite}
+@keyframes zbDrijf{50%{transform:translateY(-5px)}}@keyframes zbLens{0%,100%{transform:translate(0,0) rotate(-10deg)}50%{transform:translate(-14px,-6px) rotate(10deg)}}
+@keyframes zbPunt{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
+.wz-boem{animation:wzBoem .45s cubic-bezier(.2,1.4,.4,1)}@keyframes wzBoem{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+.pl-plus{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid rgba(34,227,196,.6);background:var(--accent2);color:var(--tekst);font-size:20px;line-height:1;cursor:pointer}
+#c_plaatsen{align-items:center}
 .wz-link{background:none;border:0;color:var(--accent);font:inherit;font-size:14px;cursor:pointer;padding:10px 0 0}
 .wz-nav [hidden],.wz-stap [hidden]{display:none!important}
 .wz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px}.wz-nav .groot-knop{margin-left:auto}
@@ -294,67 +314,35 @@
   <section id="pakketten" class="wrap breed blok">
     <h2 class="sectie"><span class="tag">03</span>Pakketten</h2>
     <p class="zacht" style="margin-top:-6px">Kies op wat je wilt bereiken. Prijzen per maand, exclusief btw. Looptijd minimaal 3 maanden. In elk pakket zit Sitehulpje: je website laten aanpassen door het te vragen.</p>
+    <p class="zacht vb-klein" style="margin:0 0 4px">Tik op een regel voor uitleg.</p>
     <div class="pakketten3">
       <div class="kaart pk">
+        
         <p class="pk-naam">Sitehulpje Basis</p>
         <h3>Gezond &amp; gevonden</h3>
-        <p class="pk-prijs">€169<small> /mnd</small></p><p class="pk-klein" style="border:0;padding:0;margin:-4px 0 6px">Eerste jaar €152,10 per maand (10% korting)</p>
+        <p class="pk-prijs">€169<small> /mnd</small></p><p class="pk-kort">Eerste jaar €152,10 per maand (10% korting)</p>
         <p class="pk-voor">Voor de lokale ondernemer die gewoon goed gevonden wil worden, zonder er zelf naar om te kijken.</p>
-        <ul class="vb-goed">
-          <li><b>Sitehulpje zit erin:</b> je website laten aanpassen door het gewoon te vragen</li>
-          <li>Elke week een website-check op ruim 30 punten</li>
-          <li>Je site wordt dag en nacht in de gaten gehouden; bij storing krijg je bericht</li>
-          <li>Dashboard met je cijfers uit Google en Bing, elke nacht bijgewerkt</li>
-          <li>Betere titels en omschrijvingen voor Google, jij keurt goed met één klik</li>
-          <li>Je bedrijfsgegevens in een vorm die Google en AI-diensten begrijpen</li>
-          <li>Maandrapport in gewone taal: wat ging beter, wat hebben we gedaan</li>
-          <li>Je Google Bedrijfsprofiel in je dashboard: gevonden in Maps, gebeld, route gevraagd</li>
-          <li>Kansen: zoekwoorden waarop je bijna bovenaan staat</li>
-          <li>Hoeveel bezoekers via ChatGPT en andere AI-diensten komen</li>
-          <li>Nieuwe pagina's meteen aangemeld bij Google en Bing</li>
-          <li>Elke maand gecontroleerd wat er op je Google Bedrijfsprofiel ontbreekt</li>
-        </ul>
+        <div class="pkr-lijst"><details name="pkr-basis" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Je website laten aanpassen</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><p>Typ of spreek in wat je wilt veranderen: teksten, foto's, prijzen of een nieuwe pagina. Je bekijkt het eerst op een testversie en geeft akkoord. Altijd terug te draaien.</p></div></details><details name="pkr-basis" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Gezond &amp; gevonden</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>Elke week een website-check op ruim 30 punten</li><li>Je site wordt dag en nacht in de gaten gehouden; bij storing krijg je bericht</li><li>Dashboard met je cijfers uit Google en Bing, elke nacht bijgewerkt</li><li>Betere titels en omschrijvingen voor Google, jij keurt goed met één klik</li><li>Je bedrijfsgegevens in een vorm die Google en AI-diensten begrijpen</li><li>Maandrapport in gewone taal: wat ging beter, wat hebben we gedaan</li><li>Je Google Bedrijfsprofiel in je dashboard: gevonden in Maps, gebeld, route gevraagd</li><li>Kansen: zoekwoorden waarop je bijna bovenaan staat</li><li>Hoeveel bezoekers via ChatGPT en andere AI-diensten komen</li><li>Nieuwe pagina's meteen aangemeld bij Google en Bing</li><li>Elke maand gecontroleerd wat er op je Google Bedrijfsprofiel ontbreekt</li></ul></div></details><details name="pkr-basis" class="pkr nee"><summary><span class="pkr-v">–</span><span class="pkr-t">Lokaal groeien in Google</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>Meer pagina's per maand verbeterd, ook afbeeldingen</li><li>Rapport met uitleg waarom cijfers stijgen of dalen, en de volgende stappen</li><li>Openingstijden, diensten en veelgestelde vragen voor Google en AI</li><li>Review-verzoeken aan je klanten: één klik, wij mailen namens jou</li><li>Bij elke nieuwe review een kant-en-klaar antwoord: nakijken en met één klik op Google</li><li>Elke maand een nieuwe pagina, bijvoorbeeld per dienst of werkgebied</li><li>Elke week een bericht met foto op je Google Bedrijfsprofiel</li><li>Ontbrekende gegevens op je Google Bedrijfsprofiel voor je klaargezet</li><li>Elk kwartaal gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li></ul></div></details><details name="pkr-basis" class="pkr nee"><summary><span class="pkr-v">–</span><span class="pkr-t">Voorsprong: maximaal gevonden</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>De meeste pagina's per maand verbeterd</li><li>Elk kwartaal een gesprek van 30 minuten met Jan</li><li>Je concurrenten gevolgd: waar staan zij, waar sta jij</li><li>Elke week gemeten hoe vaak ChatGPT en andere AI-diensten je noemen</li><li>Producten en reviews vindbaar in Google en AI</li><li>Drie nieuwe pagina's per maand</li><li>Twee keer per week een bericht op je Google Bedrijfsprofiel</li><li>Elke maand gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li></ul></div></details><details name="pkr-basis" class="pkr nee"><summary><span class="pkr-v">–</span><span class="pkr-t">Google Advertenties beheer</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><p>Jij kiest een budget, wij maken en beheren je advertenties, ook Google Shopping. Je ziet wat je erin stopte en wat het opleverde. Het budget betaal je apart aan Google.</p></div></details></div>
         <p class="pk-klein">Wij verbeteren tot 10 pagina's per maand · elke week tot 100 pagina's gecontroleerd</p>
         <a class="knop rand" href="https://sitehulpje.nl/bestellen?pakket=basis">Kies Basis</a>
       </div>
       <div class="kaart pk uit">
-        <span class="lint-inline pk-lint">aanrader</span>
+        <span class="lint-inline pk-lint">meest gekozen</span>
         <p class="pk-naam">Sitehulpje Plus</p>
         <h3>Lokaal groeien</h3>
-        <p class="pk-prijs">€239<small> /mnd</small></p><p class="pk-klein" style="border:0;padding:0;margin:-4px 0 6px">Eerste jaar €215,10 per maand (10% korting)</p>
+        <p class="pk-prijs">€239<small> /mnd</small></p><p class="pk-kort">Eerste jaar €215,10 per maand (10% korting)</p>
         <p class="pk-voor">Voor het bedrijf dat meer klanten uit de eigen regio wil, via Google, Google Maps en AI.</p>
-        <ul class="vb-goed">
-          <li><b>Alles uit Basis</b>, dus ook Sitehulpje</li>
-          <li>Meer pagina's per maand verbeterd, ook afbeeldingen</li>
-          <li>Rapport met uitleg waarom cijfers stijgen of dalen, en de volgende stappen</li>
-          <li>Openingstijden, diensten en veelgestelde vragen voor Google en AI</li>
-          <li>Review-verzoeken aan je klanten: één klik, wij mailen namens jou</li>
-          <li>Bij elke nieuwe review een kant-en-klaar antwoord: nakijken en met één klik op Google</li>
-          <li>Elke maand een nieuwe pagina, bijvoorbeeld per dienst of werkgebied</li>
-          <li>Elke week een bericht met foto op je Google Bedrijfsprofiel</li>
-          <li>Ontbrekende gegevens op je Google Bedrijfsprofiel voor je klaargezet</li>
-          <li>Elk kwartaal gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li>
-        </ul>
+        <div class="pkr-lijst"><details name="pkr-plus" class="pkr" open><summary><span class="pkr-v">✓</span><span class="pkr-t">Je website laten aanpassen</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><p>Typ of spreek in wat je wilt veranderen: teksten, foto's, prijzen of een nieuwe pagina. Je bekijkt het eerst op een testversie en geeft akkoord. Altijd terug te draaien.</p></div></details><details name="pkr-plus" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Gezond &amp; gevonden</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>Elke week een website-check op ruim 30 punten</li><li>Je site wordt dag en nacht in de gaten gehouden; bij storing krijg je bericht</li><li>Dashboard met je cijfers uit Google en Bing, elke nacht bijgewerkt</li><li>Betere titels en omschrijvingen voor Google, jij keurt goed met één klik</li><li>Je bedrijfsgegevens in een vorm die Google en AI-diensten begrijpen</li><li>Maandrapport in gewone taal: wat ging beter, wat hebben we gedaan</li><li>Je Google Bedrijfsprofiel in je dashboard: gevonden in Maps, gebeld, route gevraagd</li><li>Kansen: zoekwoorden waarop je bijna bovenaan staat</li><li>Hoeveel bezoekers via ChatGPT en andere AI-diensten komen</li><li>Nieuwe pagina's meteen aangemeld bij Google en Bing</li><li>Elke maand gecontroleerd wat er op je Google Bedrijfsprofiel ontbreekt</li></ul></div></details><details name="pkr-plus" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Lokaal groeien in Google</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>Meer pagina's per maand verbeterd, ook afbeeldingen</li><li>Rapport met uitleg waarom cijfers stijgen of dalen, en de volgende stappen</li><li>Openingstijden, diensten en veelgestelde vragen voor Google en AI</li><li>Review-verzoeken aan je klanten: één klik, wij mailen namens jou</li><li>Bij elke nieuwe review een kant-en-klaar antwoord: nakijken en met één klik op Google</li><li>Elke maand een nieuwe pagina, bijvoorbeeld per dienst of werkgebied</li><li>Elke week een bericht met foto op je Google Bedrijfsprofiel</li><li>Ontbrekende gegevens op je Google Bedrijfsprofiel voor je klaargezet</li><li>Elk kwartaal gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li></ul></div></details><details name="pkr-plus" class="pkr nee"><summary><span class="pkr-v">–</span><span class="pkr-t">Voorsprong: maximaal gevonden</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>De meeste pagina's per maand verbeterd</li><li>Elk kwartaal een gesprek van 30 minuten met Jan</li><li>Je concurrenten gevolgd: waar staan zij, waar sta jij</li><li>Elke week gemeten hoe vaak ChatGPT en andere AI-diensten je noemen</li><li>Producten en reviews vindbaar in Google en AI</li><li>Drie nieuwe pagina's per maand</li><li>Twee keer per week een bericht op je Google Bedrijfsprofiel</li><li>Elke maand gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li></ul></div></details><details name="pkr-plus" class="pkr nee"><summary><span class="pkr-v">–</span><span class="pkr-t">Google Advertenties beheer</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><p>Jij kiest een budget, wij maken en beheren je advertenties, ook Google Shopping. Je ziet wat je erin stopte en wat het opleverde. Het budget betaal je apart aan Google.</p></div></details></div>
         <p class="pk-klein">Wij verbeteren tot 30 pagina's per maand · elke week tot 500 pagina's gecontroleerd</p>
         <a class="knop" href="https://sitehulpje.nl/bestellen?pakket=plus">Kies Plus</a>
       </div>
       <div class="kaart pk">
+        
         <p class="pk-naam">Sitehulpje Pro</p>
         <h3>Voorsprong</h3>
-        <p class="pk-prijs">€369<small> /mnd</small></p><p class="pk-klein" style="border:0;padding:0;margin:-4px 0 6px">Eerste jaar €332,10 per maand (10% korting)</p>
+        <p class="pk-prijs">€369<small> /mnd</small></p><p class="pk-kort">Eerste jaar €332,10 per maand (10% korting)</p>
         <p class="pk-voor">Voor de webshop of het bedrijf met veel concurrentie, dat wil weten waar het staat en verder wil komen.</p>
-        <ul class="vb-goed">
-          <li><b>Alles uit Plus</b>, dus ook Sitehulpje</li>
-          <li><b>Je Google-advertenties door ons beheerd</b> (het advertentiebudget betaal je apart aan Google)</li>
-          <li>De meeste pagina's per maand verbeterd</li>
-          <li>Elk kwartaal een gesprek van 30 minuten met Jan</li>
-          <li>Je concurrenten gevolgd: waar staan zij, waar sta jij</li>
-          <li>Elke week gemeten hoe vaak ChatGPT en andere AI-diensten je noemen</li>
-          <li>Producten en reviews vindbaar in Google en AI</li>
-          <li>Drie nieuwe pagina's per maand</li>
-          <li>Twee keer per week een bericht op je Google Bedrijfsprofiel</li>
-          <li>Elke maand gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li>
-        </ul>
+        <div class="pkr-lijst"><details name="pkr-pro" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Je website laten aanpassen</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><p>Typ of spreek in wat je wilt veranderen: teksten, foto's, prijzen of een nieuwe pagina. Je bekijkt het eerst op een testversie en geeft akkoord. Altijd terug te draaien.</p></div></details><details name="pkr-pro" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Gezond &amp; gevonden</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>Elke week een website-check op ruim 30 punten</li><li>Je site wordt dag en nacht in de gaten gehouden; bij storing krijg je bericht</li><li>Dashboard met je cijfers uit Google en Bing, elke nacht bijgewerkt</li><li>Betere titels en omschrijvingen voor Google, jij keurt goed met één klik</li><li>Je bedrijfsgegevens in een vorm die Google en AI-diensten begrijpen</li><li>Maandrapport in gewone taal: wat ging beter, wat hebben we gedaan</li><li>Je Google Bedrijfsprofiel in je dashboard: gevonden in Maps, gebeld, route gevraagd</li><li>Kansen: zoekwoorden waarop je bijna bovenaan staat</li><li>Hoeveel bezoekers via ChatGPT en andere AI-diensten komen</li><li>Nieuwe pagina's meteen aangemeld bij Google en Bing</li><li>Elke maand gecontroleerd wat er op je Google Bedrijfsprofiel ontbreekt</li></ul></div></details><details name="pkr-pro" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Lokaal groeien in Google</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>Meer pagina's per maand verbeterd, ook afbeeldingen</li><li>Rapport met uitleg waarom cijfers stijgen of dalen, en de volgende stappen</li><li>Openingstijden, diensten en veelgestelde vragen voor Google en AI</li><li>Review-verzoeken aan je klanten: één klik, wij mailen namens jou</li><li>Bij elke nieuwe review een kant-en-klaar antwoord: nakijken en met één klik op Google</li><li>Elke maand een nieuwe pagina, bijvoorbeeld per dienst of werkgebied</li><li>Elke week een bericht met foto op je Google Bedrijfsprofiel</li><li>Ontbrekende gegevens op je Google Bedrijfsprofiel voor je klaargezet</li><li>Elk kwartaal gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li></ul></div></details><details name="pkr-pro" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Voorsprong: maximaal gevonden</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><ul><li>De meeste pagina's per maand verbeterd</li><li>Elk kwartaal een gesprek van 30 minuten met Jan</li><li>Je concurrenten gevolgd: waar staan zij, waar sta jij</li><li>Elke week gemeten hoe vaak ChatGPT en andere AI-diensten je noemen</li><li>Producten en reviews vindbaar in Google en AI</li><li>Drie nieuwe pagina's per maand</li><li>Twee keer per week een bericht op je Google Bedrijfsprofiel</li><li>Elke maand gecontroleerd of je in bedrijvengidsen overal hetzelfde staat</li></ul></div></details><details name="pkr-pro" class="pkr"><summary><span class="pkr-v">✓</span><span class="pkr-t">Google Advertenties beheer</span><svg class="pkr-pijl" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="pkr-uit"><p>Jij kiest een budget, wij maken en beheren je advertenties, ook Google Shopping. Je ziet wat je erin stopte en wat het opleverde. Het budget betaal je apart aan Google.</p></div></details></div>
         <p class="pk-klein">Wij verbeteren tot 75 pagina's per maand · elke week tot 2.000 pagina's gecontroleerd</p>
         <a class="knop rand" href="https://sitehulpje.nl/bestellen?pakket=pro">Kies Pro</a>
       </div>
@@ -434,12 +422,14 @@
         </div>
         <div class="wz-stap">
           <div class="wz-kop"><span class="wz-ic paars">🔎</span><div><h3>Hier willen we je op laten vinden</h3><p class="zacht">Wat verkoop je of wat doe je?</p></div></div>
+<div class="wz-zoek" aria-live="polite"><div class="zb"><span class="zbbot"></span><span class="lens">🔍</span></div><div><b>Sitehulpje kijkt op je website<span class="puntjes"></span></b><span>We zoeken waar je op gevonden wilt worden.</span></div></div>
           <span class="wz-auto" id="c_woordauto" hidden>✨ gevonden op je site</span>
           <div class="labelveld" id="c_labels"><input id="c_woord" autocomplete="off" placeholder="Typ en druk op Enter" aria-label="Zoekwoorden"></div>
           <p class="veld-hint" id="c_woordhint">Vul gerust aan, tot 5 in totaal. Je kunt het later in je account wijzigen of aanvullen.</p>
         </div>
         <div class="wz-stap">
           <div class="wz-kop"><span class="wz-ic oranje">👥</span><div><h3>Dit zijn je concurrenten</h3><p class="zacht">In je rapport zie je wie waar wint. Mag ook leeg.</p></div></div>
+<div class="wz-zoek" aria-live="polite"><div class="zb"><span class="zbbot"></span><span class="lens">🔍</span></div><div><b>Sitehulpje kijkt op je website<span class="puntjes"></span></b><span>We zoeken je concurrenten in de buurt.</span></div></div>
           <span class="wz-auto oranje" id="c_concauto" hidden>✨ voorgesteld</span>
           <div class="labelveld" id="c_conc"><input id="c_concin" autocomplete="off" placeholder="bijvoorbeeld concurrent.nl" aria-label="Concurrenten"></div>
           <p class="veld-hint" id="c_conchint">Vul gerust aan, tot 5 in totaal. Je kunt ze later in je account wijzigen of aanvullen.</p>
@@ -452,7 +442,10 @@
           <label class="keuze"><input type="radio" name="c_gebied" value="landelijk"><span>🇳🇱 Landelijk<small>heel Nederland</small></span></label>
           <label class="keuze"><input type="radio" name="c_gebied" value="internationaal"><span>🌍 Internationaal<small>ook buiten Nederland</small></span></label>
         </div>
-        <div id="c_plaatsrij" hidden><label for="c_plaats">In welke plaats zit je? <span class="zacht">(mag leeg, dan zoeken we het op je site)</span></label><input id="c_plaats" autocomplete="address-level2" placeholder="Bijvoorbeeld Hengelo"></div>
+        <div id="c_plaatsrij" hidden><label for="c_plaats">Waar zit je? <span class="zacht">Meer vestigingen? Voeg ze toe met +</span></label>
+          <span class="wz-auto" id="c_plaatsauto" hidden>✨ gevonden op je site</span>
+          <div class="labelveld" id="c_plaatsen"><input id="c_plaats" autocomplete="address-level2" placeholder="Bijvoorbeeld Hengelo"><button type="button" class="pl-plus" id="c_plaatsplus" aria-label="Plaats toevoegen">+</button></div>
+          <p class="veld-hint">Typ een plaats en druk op Enter of +. Mag leeg, dan zoeken we het op je site.</p></div>
         </div>
         <div class="wz-stap">
           <div class="wz-kop"><span class="wz-ic">✉️</span><div><h3>Waar mogen we het rapport heen sturen?</h3><p class="zacht">Binnen een paar uur in je mailbox.</p></div></div>
@@ -528,20 +521,41 @@ function voegConc() { const inp = $("#c_concin"); inp.value.split(",").map((w) =
 $("#c_concin").addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === ",") { e.preventDefault(); voegConc(); } else if (e.key === "Backspace" && !e.target.value && conc.length) { conc.pop(); tekenConc(); } });
 $("#c_concin").addEventListener("blur", voegConc);
 $("#c_conc").addEventListener("click", (e) => { if (e.target.id === "c_conc") $("#c_concin").focus(); });
+// plaatsen (vestigingen): zelfde soort labelveld, met een plusje
+const plaatsen = [];
+function tekenPlaatsen() {
+  const veld = $("#c_plaatsen"), inp = $("#c_plaats");
+  veld.querySelectorAll(".lbl").forEach((x) => x.remove());
+  plaatsen.forEach((w, i) => { const l = document.createElement("span"); l.className = "lbl"; l.textContent = w; const x = document.createElement("button"); x.type = "button"; x.textContent = "×"; x.setAttribute("aria-label", "Verwijder " + w); x.onclick = () => { plaatsen.splice(i, 1); tekenPlaatsen(); }; l.appendChild(x); veld.insertBefore(l, inp); });
+  inp.disabled = plaatsen.length >= 10; inp.placeholder = plaatsen.length >= 10 ? "Maximaal 10" : plaatsen.length ? "Nog een vestiging?" : "Bijvoorbeeld Hengelo";
+}
+function voegPlaats() { const inp = $("#c_plaats"); inp.value.split(",").map((w) => w.trim()).filter(Boolean).forEach((w) => { if (plaatsen.length < 10 && !plaatsen.some((p) => p.toLowerCase() === w.toLowerCase())) plaatsen.push(w.slice(0, 60)); }); inp.value = ""; tekenPlaatsen(); }
+$("#c_plaats").addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === ",") { e.preventDefault(); voegPlaats(); } else if (e.key === "Backspace" && !e.target.value && plaatsen.length) { plaatsen.pop(); tekenPlaatsen(); } });
+$("#c_plaats").addEventListener("blur", voegPlaats);
+$("#c_plaatsplus").onclick = () => { voegPlaats(); $("#c_plaats").focus(); };
+$("#c_plaatsen").addEventListener("click", (e) => { if (e.target.id === "c_plaatsen") $("#c_plaats").focus(); });
+// zoek-robot: eerst zoeken, dan in één keer tonen
+try { document.querySelectorAll(".zbbot").forEach((el) => (el.innerHTML = robotSvg("rust"))); } catch {}
+const zoekStappen = () => [$("#c_labels").closest(".wz-stap"), $("#c_conc").closest(".wz-stap")];
+const zoekAan = () => zoekStappen().forEach((st) => st.classList.add("zoekt"));
+const zoekUit = () => zoekStappen().forEach((st) => { const was = st.classList.contains("zoekt"); st.classList.remove("zoekt"); if (was) st.querySelectorAll(".labelveld,.veld-hint,.wz-auto:not([hidden])").forEach((el) => { el.classList.remove("wz-boem"); void el.offsetWidth; el.classList.add("wz-boem"); }); });
 // na het invullen van de website: zoekwoorden, plaats en concurrenten voorstellen
 let laatsteSite = "";
 $("#c_site").addEventListener("change", async () => {
   const s = $("#c_site").value.trim(); if (!s || s === laatsteSite) return; laatsteSite = s;
-  const hint = $("#c_woordhint"), oud = hint.textContent, ch = $("#c_conchint"), coud = ch.textContent; hint.textContent = ch.textContent = "Even kijken op je website…";
+  const hint = $("#c_woordhint"), oud = hint.textContent, ch = $("#c_conchint"), coud = ch.textContent;
+  zoekAan(); const start = Date.now();
   try {
     const r = await fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/sr-voorstel", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ actie: "voorstel", site: s }) });
     const d = await r.json();
     (d.woorden || []).slice(0, 4).forEach((w) => { if (woorden.length < 5 && !woorden.includes(w)) woorden.push(w); }); tekenLabels();
     (d.concurrenten || []).slice(0, 4).forEach((c) => { if (conc.length < 5 && !conc.includes(c.site)) conc.push(c.site); }); tekenConc();
-    if (d.plaats && !$("#c_plaats").value) { $("#c_plaats").value = d.plaats; const g = document.querySelector("input[name=c_gebied][value=plaatselijk]"); if (g && !document.querySelector("input[name=c_gebied]:checked")) { g.checked = true; $("#c_plaatsrij").hidden = false; } }
+    if (d.plaats && !plaatsen.length) { plaatsen.push(String(d.plaats).slice(0, 60)); tekenPlaatsen(); $("#c_plaatsauto").hidden = false; const g = document.querySelector("input[name=c_gebied][value=plaatselijk]"); if (g && !document.querySelector("input[name=c_gebied]:checked")) { g.checked = true; $("#c_plaatsrij").hidden = false; } }
     hint.textContent = (d.woorden || []).length ? "Klopt het niet helemaal? Haal weg of vul aan, tot 5 in totaal. Je kunt het later in je account wijzigen of aanvullen." : oud; ch.textContent = coud;
     $("#c_woordauto").hidden = !(d.woorden || []).length; $("#c_concauto").hidden = !(d.concurrenten || []).length;
   } catch { hint.textContent = oud; ch.textContent = coud; }
+  // de robot is altijd even te zien, zodat duidelijk is dat er gezocht wordt
+  setTimeout(zoekUit, Math.max(0, 1400 - (Date.now() - start)));
 });
 $("#c_labels").addEventListener("click", (e) => { if (e.target.id === "c_labels") $("#c_woord").focus(); });
 document.querySelectorAll("input[name=c_gebied]").forEach((r) => r.addEventListener("change", () => {
@@ -574,14 +588,14 @@ $("#cform").onsubmit = async (e) => {
   try {
     const r = await fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/vb-check", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({
       actie: "aanvraag", site: $("#c_site").value, email: $("#c_email").value, naam: $("#c_naam").value, bedrijf: "",
-      woorden, concurrenten: conc, werkgebied: document.querySelector("input[name=c_gebied]:checked")?.value || "", plaats: $("#c_plaatsrij").hidden ? "" : $("#c_plaats").value,
+      woorden, concurrenten: conc, werkgebied: document.querySelector("input[name=c_gebied]:checked")?.value || "", plaats: $("#c_plaatsrij").hidden ? "" : (voegPlaats(), plaatsen.join(", ")),
       bericht: $("#c_bericht").value, keuze: document.querySelector("input[name=c_keuze]:checked")?.value || "", sitehulpje: $("#c_sh").checked,
       website2: $("#c_website2").value, bron: location.hostname }) });
     const d = await r.json().catch(() => ({}));
     if (!r.ok) throw new Error(d.fout || "Versturen lukte niet. Probeer het zo nog eens.");
     const naar = $("#c_email").value.trim();
     fetch("https://dauvsivoxfdfzurmyuug.supabase.co/functions/v1/sr-voorstel", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ actie: "kies", site: $("#c_site").value, concurrenten: conc }) }).catch(() => {});
-    $("#cform").reset(); woorden.length = 0; tekenLabels(); conc.length = 0; tekenConc(); laatsteSite = ""; $("#c_plaatsrij").hidden = true; wzGa(0); wzGekozen();
+    $("#cform").reset(); woorden.length = 0; tekenLabels(); conc.length = 0; tekenConc(); plaatsen.length = 0; tekenPlaatsen(); $("#c_plaatsauto").hidden = true; laatsteSite = ""; $("#c_plaatsrij").hidden = true; wzGa(0); wzGekozen();
     toonMelding($("#cmeld"), `Bedankt! We controleren je website nu. Binnen een paar uur krijg je het rapport per mail op ${naar}. Niets gezien? Kijk even bij je reclame of spam.`, "ok");
   } catch (err) { toonMelding($("#cmeld"), err.message); }
   $("#cknop").disabled = false;

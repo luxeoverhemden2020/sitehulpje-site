@@ -49,6 +49,14 @@
 .ga-stappen{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .ga-stap{padding:20px}.ga-stap .nr{font:700 15px "Space Grotesk",sans-serif;color:var(--accent)}.ga-stap h3{margin:6px 0;font-size:19px}.ga-stap p{margin:0;color:var(--zacht);line-height:1.6}
 @media (max-width:860px){.ga-twee,.ga-stappen{grid-template-columns:1fr}}
+.ga-beter{display:flex;flex-direction:column;gap:10px;max-width:760px}
+.ga-b{padding:0}
+.ga-b summary{cursor:pointer;list-style:none;padding:17px 18px;font-weight:700;font-size:17.5px;display:flex;align-items:center;gap:10px;touch-action:manipulation}
+.ga-b summary::-webkit-details-marker{display:none}
+.ga-b summary::after{content:"";margin-left:auto;flex:none;width:9px;height:9px;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(45deg);transition:transform .25s}
+.ga-b[open] summary::after{transform:rotate(-135deg)}
+.ga-b p{margin:0;padding:0 18px 18px;color:var(--zacht);font-size:16px;line-height:1.65}
+.ga-nieuw{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--accent2);color:var(--accent);white-space:nowrap}
 </style>
 <script type="application/ld+json">
 {
@@ -204,6 +212,17 @@
     </div>
   </section>
 
+  <section class="wrap breed lp-sectie" id="overal-aan-gedacht">
+    <h2>Wij denken overal aan</h2>
+    <p>Waar andere bureaus stoppen bij de advertentie, gaan wij door.</p>
+    <div class="ga-beter">
+      <details class="kaart ga-b" name="beter" open><summary>We verbeteren ook de pagina achter je advertentie</summary><p>Een advertentiebureau kan alleen aan de advertentie zelf draaien. Wij bouwen en beheren ook websites, dus wij pakken ook de pagina aan waar je bezoeker op terechtkomt. Een snelle, duidelijke pagina levert meer klanten op, en Google beloont dat vaak met een lagere prijs per klik.</p></details>
+      <details class="kaart ga-b" name="beter"><summary>Elk uur bewaakt, elke dag gecontroleerd</summary><p>Veel bureaus kijken eens per maand naar je advertenties. Wij bewaken je budget elk uur en controleren elke dag of al je advertenties goed draaien. Is je budget op, dan stopt de campagne vanzelf. Geen verrassingen achteraf.</p></details>
+      <details class="kaart ga-b" name="beter"><summary>Eerlijke cijfers, ook als het tegenvalt</summary><p>Je ziet de kosten bij Google precies zoals Google ze rekent, zonder onze vergoeding erbij. En omzet is geen winst: dat zetten we er altijd bij. Zo weet je echt wat je advertenties opleveren.</p></details>
+      <details class="kaart ga-b" name="beter"><summary>Advertenties én gratis gevonden worden</summary><p>Advertenties brengen direct bezoekers, maar alleen zolang je betaalt. Met onze pakketten word je ook zonder advertenties beter gevonden in Google. De twee versterken elkaar, en wij houden beide in de gaten.</p></details>
+    </div>
+  </section>
+
   <section class="wrap breed lp-sectie">
     <h2>Wat jij hoeft te doen</h2>
     <div class="ga-stappen">
@@ -272,6 +291,9 @@ $("#bform").onsubmit = async (ev) => {
   } catch (err) { toonMelding($("#cmeld"), err.message); }
   $("#cknop").disabled = false;
 };
+</script>
+<script>
+document.querySelectorAll('.ga-b').forEach(function(d){d.addEventListener('toggle',function(){if(d.open)document.querySelectorAll('.ga-b').forEach(function(o){if(o!==d)o.open=false})})});
 </script>
 <script src="/assets/wow.js"></script>
 <script src="/assets/zijmenu.js?v=20261111b"></script>

@@ -177,9 +177,11 @@ function toonRapport(u) {
     const d = await r.json().catch(() => ({}));
     if (!r.ok) throw new Error(d.fout || "Rapport niet gevonden.");
     toonRapport(d.uitslag);
+    try { leesMeten({ soort: "ads", t }); } catch {}
   } catch (err) { toonMelding($("#ameld"), err.message); }
 })();
 </script>
+<script src="/assets/lees.js?v=20261116"></script>
 <script src="/assets/wow.js"></script>
 <script src="/assets/zijmenu.js?v=20261111b"></script>
 </body>

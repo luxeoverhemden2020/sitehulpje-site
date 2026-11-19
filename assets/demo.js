@@ -76,7 +76,14 @@
     }
     const prijs = t.match(/(?:€|eur(?:o)?\s*)\s*(\d+(?:\.\d{1,2})?)|(\d+(?:\.\d{1,2})?)\s*(?:€|euro|eur\b|,-)/);
     if (prijs && /(prijs|kost|maak|zet|euro|€)/.test(t) && !/verzend|vanaf/.test(t)) {
-      const p = parseFloat(prijs[1] || prijs[2]); if (p > 0 && p < 100000) { st.prijs = p; gedaan.push(`de prijs is nu <b>${euro(p)}</b>`); flits.push("prijs"); }
+      const p = parseFloat(prijs[1] || prijs[2]); if (p > 0 && p < 100000) {
+        // Een losse prijs is de verkoopprijs: een eerdere sale gaat eraf, zodat de klant precies dit bedrag ziet.
+        const saleNuGezet = st.sale !== oud.sale;
+        st.prijs = p;
+        if (st.sale && !saleNuGezet) { st.sale = 0; gedaan.push(`de prijs is nu <b>${euro(p)}</b> (de sale is eraf gehaald)`); flits.push("sale"); }
+        else gedaan.push(`de prijs is nu <b>${euro(p)}</b>`);
+        flits.push("prijs");
+      }
     }
     const kleur = Object.keys(KLEUREN).find((k) => new RegExp("\\b" + k).test(t));
     if (kleur) {

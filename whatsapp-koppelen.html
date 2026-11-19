@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WhatsApp koppelen | Siteregelaar</title>
+<meta name="description" content="Koppel je bestaande WhatsApp Business-nummer veilig aan Siteregelaar via de officiële aanmeldstap van Meta. Je blijft de WhatsApp Business-app gewoon gebruiken.">
+<link rel="canonical" href="https://siteregelaar.nl/whatsapp-koppelen">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0b1020">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/stijl.css?v=20261110c">
+<link rel="stylesheet" href="/assets/home.css?v=20261110">
+<style>
+.tekst{max-width:760px;margin:0 auto;padding:24px 16px 60px;line-height:1.65}
+.tekst h1{font-size:clamp(30px,5vw,44px);margin:10px 0 6px}
+.tekst h2{font-size:21px;margin:30px 0 8px}
+.lp-kruim{font-size:14px;color:var(--zacht);margin:18px 0 0}.lp-kruim a{color:inherit}
+.stappen{counter-reset:s;list-style:none;padding:0}
+.stappen li{counter-increment:s;position:relative;padding:0 0 12px 44px}
+.stappen li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:#22e3c4;color:#0b1020;font-weight:700;display:flex;align-items:center;justify-content:center}
+.kaart{border:1px solid rgba(47,240,208,.35);border-radius:16px;padding:22px;margin:26px 0;background:rgba(34,227,196,.05)}
+.akkoord{display:flex;gap:10px;align-items:flex-start;margin:0 0 16px}
+.akkoord input{margin-top:5px;width:18px;height:18px}
+#koppelknop{background:#1877f2;border:0;border-radius:8px;color:#fff;cursor:pointer;font-size:17px;font-weight:700;padding:14px 26px}
+#koppelknop:disabled{opacity:.45;cursor:not-allowed}
+#status{margin-top:16px;padding:12px 14px;border-radius:10px;display:none}
+#status.info{display:block;background:rgba(255,255,255,.06)}
+#status.ok{display:block;background:rgba(34,227,196,.15);border:1px solid #22e3c4}
+#status.fout{display:block;background:rgba(255,90,90,.12);border:1px solid #ff6b6b}
+.klein{font-size:14px;color:var(--zacht)}
+</style>
+<script src="/assets/cookies.js?v=20261110"></script>
+</head>
+<body class="home">
+
+<header class="kop">
+  <a href="/" class="merk" style="text-decoration:none;color:inherit">Site<b>regelaar</b></a>
+  <nav class="rechts" aria-label="Hoofdmenu">
+    <a class="navlink verberg-mobiel" href="/">Home</a>
+    <a class="navlink verberg-mobiel" href="/privacy">Privacy</a>
+    <a class="navlink" href="/#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="tekst">
+<p class="lp-kruim"><a href="/">Siteregelaar</a> › WhatsApp koppelen</p>
+<h1>WhatsApp koppelen</h1>
+<p class="groot">Koppel je bestaande WhatsApp Business-nummer aan Siteregelaar. Berichten en bijlagen komen dan automatisch op de juiste plek in je systeem terecht. De WhatsApp Business-app op je telefoon blijft gewoon werken.</p>
+
+<h2>Wat heb je nodig?</h2>
+<ul>
+<li>Je telefoon met de <b>WhatsApp Business-app</b> (versie 2.24.17 of nieuwer), bij de hand en ontgrendeld.</li>
+<li>Een <b>Facebook-account</b> dat beheerder is van je bedrijf bij Meta (of waarmee je er een aanmaakt).</li>
+<li>Ongeveer 10 minuten.</li>
+</ul>
+
+<h2>Zo werkt het</h2>
+<ol class="stappen">
+<li>Klik op <b>Koppel WhatsApp</b>. Er opent een venster van Meta (Facebook). Log daar in.</li>
+<li>Kies je bedrijf en kies <b>"Bestaand WhatsApp Business-account koppelen"</b>. Vul het telefoonnummer in.</li>
+<li>Je krijgt in de WhatsApp Business-app een bericht van Facebook Business. Tik op <b>Verbinden</b>, bevestig of je de chatgeschiedenis wilt delen, en vul de code in die je op het scherm ziet.</li>
+<li>Rond het venster af met <b>Voltooien</b>. Laat daarna de WhatsApp Business-app een paar minuten open, zodat je contacten en gesprekken overgezet kunnen worden.</li>
+</ol>
+
+<div class="kaart">
+  <label class="akkoord"><input type="checkbox" id="akkoord">
+  <span>Ik ga akkoord met de <a href="/voorwaarden" target="_blank">gebruiksvoorwaarden</a> en de <a href="/privacy" target="_blank">privacyverklaring</a> van Siteregelaar, en geef Siteregelaar toegang tot het WhatsApp Business-account van mijn bedrijf om berichten te ontvangen en te versturen.</span></label>
+  <button id="koppelknop" disabled>Koppel WhatsApp</button>
+  <div id="status" role="status" aria-live="polite"></div>
+</div>
+
+<h2>Goed om te weten</h2>
+<ul>
+<li>Je deelt <b>nooit je wachtwoord</b> met ons. Je geeft toestemming in je eigen Meta-account en kunt die altijd weer intrekken.</li>
+<li>Berichten via de WhatsApp Business-app blijven gratis. Alleen voor berichten die via de koppeling worden verstuurd kan Meta kosten rekenen; dat melden we altijd vooraf.</li>
+<li>Na het koppelen worden <b>verdwijnende berichten, eenmalig bekijken en uitzendlijsten</b> uitgeschakeld in de app, en worden gekoppelde apparaten één keer ontkoppeld (je kunt ze daarna opnieuw koppelen). Groepsgesprekken worden niet overgezet.</li>
+<li>Stoppen kan altijd: in de WhatsApp Business-app via Instellingen → Account → Bedrijfsplatform → Ontkoppelen, of door ons te mailen.</li>
+</ul>
+<p class="klein">Vragen? Bel of app <a href="tel:+31627254383">06 27 25 43 83</a> of mail <a href="mailto:info@siteregelaar.nl">info@siteregelaar.nl</a>.</p>
+</main>
+
+<footer class="voet wrap breed">
+  <span>Site<b>regelaar</b> · je website, geregeld. Met Sitehulpje.</span>
+  <span class="voet-nap">Siteregelaar · Markt 9, 7551 CG Hengelo · <a href="tel:+31627254383">06 27 25 43 83</a> · <a href="mailto:info@siteregelaar.nl">info@siteregelaar.nl</a> · KvK 55667147</span>
+  <span class="voet-links"><a href="/privacy">Privacy</a> · <a href="/voorwaarden">Voorwaarden</a> · <a href="#" data-cookie-keuze>Cookie-instellingen</a></span>
+</footer>
+
+<script>
+// Meta Embedded Signup v4 met coexistence (bestaand WhatsApp Business-app-nummer)
+const APP_ID = "1764746641255275";
+const CONFIG_ID = "1193230569707220";
+const GRAPH_VERSIE = "v27.0";
+const ONBOARD_URL = "https://server-195-22-101-171.da.direct/n8neliya/webhook/wa-onboard";
+
+const knop = document.getElementById("koppelknop");
+const akkoord = document.getElementById("akkoord");
+const statusEl = document.getElementById("status");
+const klant = new URLSearchParams(location.search).get("klant") || "";
+let sessie = null, code = null, verstuurd = false, sdkKlaar = false;
+
+function toon(tekst, soort) { statusEl.className = soort; statusEl.textContent = tekst; }
+function bijwerkenKnop() { knop.disabled = !(akkoord.checked && sdkKlaar); }
+akkoord.addEventListener("change", bijwerkenKnop);
+
+window.fbAsyncInit = function () {
+  FB.init({ appId: APP_ID, autoLogAppEvents: true, xfbml: false, version: GRAPH_VERSIE });
+  sdkKlaar = true; bijwerkenKnop();
+};
+
+// Sessie-informatie van Meta (welk account en nummer is gekoppeld)
+window.addEventListener("message", (event) => {
+  if (!event.origin.endsWith("facebook.com")) return;
+  let data; try { data = JSON.parse(event.data); } catch { return; }
+  if (data.type !== "WA_EMBEDDED_SIGNUP") return;
+  if (data.event === "CANCEL") {
+    toon("Het koppelen is gestopt" + (data.data && data.data.current_step ? " (bij stap " + data.data.current_step + ")" : "") + ". Je kunt het opnieuw proberen.", "fout");
+    meld({ event: "CANCEL", data: data.data });
+  } else if (data.event === "ERROR") {
+    toon("Meta meldt een fout: " + ((data.data && data.data.error_message) || "onbekend") + ". Neem gerust contact met ons op.", "fout");
+    meld({ event: "ERROR", data: data.data });
+  } else if (String(data.event || "").startsWith("FINISH")) {
+    sessie = data; probeerVersturen();
+  }
+});
+
+function fbLoginCallback(response) {
+  if (response && response.authResponse && response.authResponse.code) {
+    code = response.authResponse.code; probeerVersturen();
+  } else if (!sessie) {
+    toon("Het venster is gesloten zonder te koppelen. Probeer het opnieuw.", "fout");
+  }
+}
+
+function meld(extra) {
+  // korte melding voor onze logboeken (geen persoonsgegevens)
+  fetch(ONBOARD_URL, { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(Object.assign({ soort: "sessie", klant }, extra)) }).catch(() => {});
+}
+
+async function probeerVersturen() {
+  if (verstuurd || !code || !sessie) return;
+  verstuurd = true;
+  toon("Gelukt bij Meta. We ronden de koppeling nu af… laat de WhatsApp Business-app open.", "info");
+  try {
+    const r = await fetch(ONBOARD_URL, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ soort: "onboard", klant, code, event: sessie.event,
+        waba_id: sessie.data && sessie.data.waba_id, phone_number_id: sessie.data && sessie.data.phone_number_id,
+        business_id: sessie.data && sessie.data.business_id }) });
+    if (!r.ok) throw new Error("status " + r.status);
+    toon("Je WhatsApp is gekoppeld. Contacten en gesprekken worden nu overgezet; laat de WhatsApp Business-app nog een paar minuten open. Je krijgt bericht als alles klaar is.", "ok");
+  } catch (e) {
+    verstuurd = false;
+    toon("De koppeling bij Meta is gelukt, maar het afronden bij ons lukte niet. Bel of app ons direct op 06 27 25 43 83, dan maken we het af.", "fout");
+  }
+}
+
+knop.addEventListener("click", () => {
+  sessie = null; code = null; verstuurd = false;
+  toon("Het venster van Meta opent…", "info");
+  FB.login(fbLoginCallback, {
+    config_id: CONFIG_ID,
+    response_type: "code",
+    override_default_response_type: true,
+    extras: { setup: {}, featureType: "whatsapp_business_app_onboarding", sessionInfoVersion: "3" }
+  });
+});
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/nl_NL/sdk.js"></script>
+</body>
+</html>
